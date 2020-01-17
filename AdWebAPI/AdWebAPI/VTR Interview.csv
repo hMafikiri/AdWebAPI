@@ -1,0 +1,767 @@
+Year;Market;Segment;Brand;Copy_Duration;Copy_Name;Score_1;Score_2
+N/A;US;Chocolate;3 Musketeers;15;grumpy;;
+2014;US;Wrigley;5 M3M;15;aback;8;29%
+2014;US;Wrigley;5 M3M;30;aback;;
+2010;DE;Wrigley;5 M3M;15;conscious;17;
+2015;DE;Wrigley;5 M3M;15;curved;15;25%
+2013;DE;Wrigley;5 M3M;15;dangerous;10;
+2014;CN;Wrigley;5 M3M;15;decisive;13;
+2013;RU;Wrigley;5 M3M;15;electronic;10;
+2015;DE;Wrigley;5 M3M;15;environmental;;26%
+2015;US;Wrigley;5 M3M;15;exultant;;30%
+2016;RU;Wrigley;5 M3M;15;exultant;;29%
+N/A;US;Wrigley;5 M3M;15;fierce;;
+N/A;US;Wrigley;5 M3M;15;gaudy;;
+2010;US;Wrigley;5 M3M;30;hard;;
+2010;US;Wrigley;5 M3M;30;humorous;;
+2013;DE;Wrigley;5 M3M;17;hungry;15;
+2015;DE;Wrigley;5 M3M;15;ill-fated;;26%
+2016;RU;Wrigley;5 M3M;15;imminent;;30%
+2013;US;Wrigley;5 M3M;15;impartial;15;29%
+2014;CN;Wrigley;5 M3M;15;impartial;10;
+2015;US;Wrigley;5 M3M;15;important;;31%
+2015;US;Wrigley;5 M3M;15;innate;;31%
+2015;US;Wrigley;5 M3M;15;jagged;;29%
+2015;US;Wrigley;5 M3M;15;kind;;31%
+2016;RU;Wrigley;5 M3M;15;kind;;29%
+2015;DE;Wrigley;5 M3M;15;knotty;;25%
+2014;UK;Wrigley;Airwaves;10;breakable;15;34%
+2014;DE;Wrigley;Airwaves;15;broken;10;
+2012;DE;Wrigley;Airwaves;20;different;10;
+2016;FR;Wrigley;Airwaves;15;exuberant;5;
+2017;DE;Wrigley;Airwaves;15;exuberant;5;
+2015;DE;Wrigley;Airwaves;20;furry;10;
+2016;FR;Wrigley;Airwaves;15;furry;10;30%
+2014;UK;Wrigley;Airwaves;30;grouchy;5;32%
+2017;UK;Wrigley;Airwaves;10;hard-to-find;15;
+2014;DE;Wrigley;Airwaves;10;hypnotic;5;
+2014;DE;Wrigley;Airwaves;17;left;10;
+2010;FR;Chocolate;Balisto;20;abstracted;20;
+2011;DE;Chocolate;Balisto;12;cooperative;;
+2011;RU;Chocolate;Bounty;30;doubtful;5;
+2007;UK;Chocolate;Bounty;20;handsome;10;
+2014;RU;Chocolate;Bounty;20;mental;10;
+N/A;US;Petcare;Cat Chow;15;bawdy;;
+2017;FR;Petcare;Catisfactions;15;enthusiastic;10;
+2008;FR;Petcare;Catisfactions;20;like;15;
+2013;DE;Petcare;Catsan;15;mute;15;
+2013;FR;Petcare;Catsan;17;mute;15;
+2016;UK;Petcare;Ceasr/My Dog;20;greedy;15;26%
+2015;UK;Chocolate;Celebrations;20;bizarre;;35%
+2012;UK;Chocolate;Celebrations;30;crabby;10;
+2011;DE;Chocolate;Celebrations;20;eminent;20;
+2015;UK;Chocolate;Celebrations;30;lacking;15;35%
+2015;UK;Chocolate;Celebrations;15;lacking;;
+2014;DE;Petcare;Cesar;20;abstracted;15;25%
+2011;US;Petcare;Cesar;30;actual;5;
+2011;FR;Petcare;Cesar;23;asleep;15;
+2014;US;Petcare;Cesar;15;astonishing;15;
+2014;US;Petcare;Cesar;30;astonishing;10;
+2014;FR;Petcare;Cesar;20;demonic;20;29%
+2009;UK;Petcare;Cesar;28;doubtful;;
+2014;UK;Petcare;Cesar;30;endurable;10;
+2013;UK;Petcare;Cesar;40;endurable;10;
+2015;AU;Petcare;Cesar;15;existing;10;
+2015;UK;Petcare;Cesar;30;general;15;31%
+2015;AU;Petcare;Cesar;30;general;15;27%
+2015;AU;Petcare;Cesar;15;general;15;29%
+2016;DE;Petcare;Cesar;20;gifted;10;
+2016;DE;Petcare;Cesar;15;gifted;15;
+N/A;US;Petcare;Cesar;15;gigantic;;
+2012;UK;Petcare;Cesar;30;grateful;5;
+2015;US;Petcare;Cesar;15;greedy;20;31%
+2015;US;Petcare;Cesar;30;greedy;20;
+2011;UK;Petcare;Cesar;30;halting;20;
+2010;US;Petcare;Cesar;30;husky;10;
+2010;US;Petcare;Cesar;30;impolite;5;
+2008;FR;Petcare;Cesar;20;literate;20;
+2016;FR;Petcare;Cesar;60;long;;32%
+2016;MX;Petcare;Cesar;60;long;;36%
+2013;DE;Petcare;Cesar;15;male;15;
+2013;DE;Petcare;Cesar;20;male;15;
+2016;FR;Petcare;Cesar;60;marked;;34%
+2016;MX;Petcare;Cesar;60;marked;;37%
+N/A;US;Petcare;Cesar;15;FALSE;;
+2016;FR;Petcare;Cesar/My Dog;20;greedy;15;27%
+2015;CN;Chocolate;Crispy;15;draconian;10;
+2014;CN;Chocolate;Crispy;15;laughable;15;
+2013;FR;Petcare;Dentastix;25;cloistered;10;
+2013;US;Petcare;Dentastix;15;cloistered;10;33%
+2013;DE;Petcare;Dentastix;20;delirious;5;
+2013;UK;Petcare;Dentastix;20;delirious;10;
+2013;AU;Petcare;Dentastix;15;entertaining;10;28%
+2014;AU;Petcare;Dine;15;helpful;5;
+2015;AU;Petcare;Dine;15;highfalutin;10;
+2017;AU;Petcare;Dine;15;hollow;15;
+2014;AU;Petcare;Dine;15;itchy;5;
+2014;AU;Petcare;Dine;30;itchy;3;
+2013;UK;Food;Dolmio;30;damaging;15;
+2017;UK;Food;Dolmio;20;glistening;2;
+2009;UK;Food;Dolmio;30;grandiose;;
+2013;UK;Food;Dolmio;30;hesitant;5;
+2015;AU;Food;Dolmio;15;historical;10;
+2013;UK;Food;Dolmio;30;hurried;12;32%
+2015;AU;Food;Dolmio;15;juicy;16;
+2014;AU;Food;Dolmio;15;labored;10;
+2014;UK;Food;Dolmio;30;labored;23;31%
+2016;UK;Food;Dolmio;10;living;17;
+2016;UK;Food;Dolmio;15;long-term;;30%
+2015;UK;Food;Dolmio;30;lyrical;5;29%
+2015;CN;Wrigley;Doublemint;30;aboard;15;
+2013;CN;Wrigley;Doublemint;15;certain;5;
+2014;CN;Wrigley;Doublemint;30;dashing;10;
+2014;CN;Wrigley;Doublemint;15;devilish;5;
+2013;CN;Wrigley;Doublemint;15;glorious;5;
+2017;CN;Wrigley;Doublemint;30;handsomely;10;
+2016;CN;Wrigley;Doublemint;30;languid;15;
+2015;US;Chocolate;Dove;30;ill-informed;5;29%
+2013;CN;Chocolate;Dove Galaxy;15;ajar;10;
+2014;RU;Chocolate;Dove Galaxy;20;assorted;10;
+2014;UK;Chocolate;Dove Galaxy;30;assorted;15;
+2014;US;Chocolate;Dove Galaxy;30;assorted;10;
+2014;RU;Chocolate;Dove Galaxy;30;assorted;10;
+2012;CN;Chocolate;Dove Galaxy;15;big;;
+2013;UK;Chocolate;Dove Galaxy;30;bite-sized;5;
+2012;CN;Chocolate;Dove Galaxy;15;bustling;;
+2013;RU;Chocolate;Dove Galaxy;20;careful;5;
+;RU;Chocolate;Dove Galaxy;30;careful;;
+2015;CN;Chocolate;Dove Galaxy;15;chivalrous;15;
+2016;US;Chocolate;Dove Galaxy;15;clever;15;
+2016;US;Chocolate;Dove Galaxy;60;clever;;
+2016;US;Chocolate;Dove Galaxy;30;cluttered;10;
+2016;US;Chocolate;Dove Galaxy;15;comprehensive;5;
+2016;US;Chocolate;Dove Galaxy;30;comprehensive;5;
+2015;UK;Chocolate;Dove Galaxy;20;critical;10;
+2010;US;Chocolate;Dove Galaxy;30;defiant;;
+2013;CN;Chocolate;Dove Galaxy;15;easy;5;
+2007;UK;Chocolate;Dove Galaxy;30;efficient;10;
+2014;US;Chocolate;Dove Galaxy;15;feigned;10;
+2013;US;Chocolate;Dove Galaxy;15;flowery;5;
+2010;UK;Chocolate;Dove Galaxy;28;fortunate;;
+2014;CN;Chocolate;Dove Galaxy;30;garrulous;10;
+2017;CN;Chocolate;Dove Galaxy;15;guttural;10;
+2013;CN;Chocolate;Dove Galaxy;15;habitual;5;
+2015;RU;Chocolate;Dove Galaxy;20;heavy;15;
+2014;CN;Chocolate;Dove Galaxy;15;horrible;15;
+2014;CN;Chocolate;Dove Galaxy;30;horrible;15;
+2015;US;Chocolate;Dove Galaxy;15;ill-informed;5;
+2014;US;Chocolate;Dove Galaxy;15;infamous;10;
+2017;UK;Chocolate;Dove Galaxy;30;lethal;5;
+2016;RU;Chocolate;Dove Galaxy;20;likeable;18;
+2016;RU;Chocolate;Dove/Galaxy;20;cool;;24%
+2016;RU;Chocolate;Dove/Galaxy;30;cool;;29%
+2016;US;Chocolate;Dove/Galaxy;15;drab;;31%
+2016;US;Chocolate;Dove/Galaxy;30;drab;;33%
+2017;RU;Petcare;Dreamies;15;dear;10;
+;JP;Petcare;Dreamies;30;enthusiastic;20;27%
+;RU;Petcare;Dreamies;30;enthusiastic;;29%
+2016;DE;Petcare;Dreamies;15;enthusiastic;15;
+2017;UK;Petcare;Dreamies;20;enthusiastic;15;
+2014;FR;Food;Ebly;20;gleaming;;
+2013;AU;Wrigley;Eclipse;15;billowy;15;36%
+2012;RU;Wrigley;Eclipse;25;brawny;10;
+2014;AU;Wrigley;Eclipse;15;incandescent;5;34%
+2015;AU;Wrigley;Eclipse Chewy Mints;30;billowy;15;33%
+2014;AU;Wrigley;Eclipse Hard Mints;30;incandescent;5;
+2017;CN;Wrigley;Extra;15;axiomatic;15;
+;UK;Wrigley;Extra;20;bustling;;
+2014;US;Wrigley;Extra;30;gratis;15;
+;UK;Wrigley;Extra;20;harmonious;;
+;CN;Wrigley;Extra;15;heavenly;;
+2015;US;Wrigley;Extra;15;icky;;32%
+2015;US;Wrigley;Extra;15;illustrious;;32%
+2015;US;Wrigley;Extra;15;imperfect;;31%
+2015;US;Wrigley;Extra;60;insidious;;30%
+2015;US;Wrigley;Extra;15;internal;;32%
+2016;UK;Wrigley;Extra;20;invincible;;27%
+;UK;Wrigley;Extra;20;medical;;
+;CN;Wrigley;Extra;15;medical;;
+2010;DE;Wrigley;Extra Orbit;20;accidental;;
+2010;US;Wrigley;Extra Orbit;15;ad hoc;5;
+2010;US;Wrigley;Extra Orbit;30;adjoining;5;
+2013;RU;Wrigley;Extra Orbit;30;alcoholic;15;33%
+2013;AU;Wrigley;Extra Orbit;15;amazing;10;
+2013;AU;Wrigley;Extra Orbit;30;amazing;10;
+2012;DE;Wrigley;Extra Orbit;25;angry;15;
+2012;DE;Wrigley;Extra Orbit;20;animated;10;
+2014;UK;Wrigley;Extra Orbit;10;befitting;5;
+2015;DE;Wrigley;Extra Orbit;20;bent;10;
+2014;DE;Wrigley;Extra Orbit;10;black-and-white;10;35%
+2013;AU;Wrigley;Extra Orbit;30;bloody;10;29%
+2014;DE;Wrigley;Extra Orbit;20;bloody;10;
+2014;RU;Wrigley;Extra Orbit;30;bloody;15;
+2014;UK;Wrigley;Extra Orbit;20;bloody;15;
+2014;RU;Wrigley;Extra Orbit;20;bloody;15;
+2014;RU;Wrigley;Extra Orbit;30;bored;5;28%
+2013;DE;Wrigley;Extra Orbit;10;brainy;10;30%
+2014;UK;Wrigley;Extra Orbit;10;breakable;10;
+2015;AU;Wrigley;Extra Orbit;15;bright;10;
+2012;DE;Wrigley;Extra Orbit;10;caring;5;
+2012;DE;Wrigley;Extra Orbit;15;courageous;20;
+2016;AU;Wrigley;Extra Orbit;15;daily;15;29%
+2015;DE;Wrigley;Extra Orbit;15;dry;15;27%
+2011;DE;Wrigley;Extra Orbit;20;equable;10;
+2011;DE;Wrigley;Extra Orbit;15;familiar;20;
+2011;UK;Wrigley;Extra Orbit;10;good;5;
+2014;US;Wrigley;Extra Orbit;15;gratis;15;31%
+2011;DE;Wrigley;Extra Orbit;20;high;15;
+2013;CN;Wrigley;Extra Orbit;15;idiotic;15;
+2012;US;Wrigley;Extra Orbit;15;ill;5;
+2015;US;Wrigley;Extra Orbit;30;incredible;15;31%
+2015;RU;Wrigley;Extra Orbit;30;invincible;10;27%
+2012;CN;Wrigley;Extra Orbit;30;jazzy;15;
+2013;CN;Wrigley;Extra Orbit;15;jobless;15;
+2013;CN;Wrigley;Extra Orbit;15;jolly;10;
+2013;CN;Wrigley;Extra Orbit;15;joyous;15;
+2010;DE;Wrigley;Extra Orbit;25;lame;10;
+2017;RU;Wrigley;Extra Orbit;15;lamentable;10;
+2017;RU;Wrigley;Extra Orbit;15;longing;15;
+2011;DE;Wrigley;Extra Orbit;20;lying;15;
+2014;RU;Wrigley;Extra Orbit;30;merciful;10;
+N/A;US;Petcare;Fancy Feast;30;fast;;
+2013;FR;Wrigley;Freedent;15;bloody;10;
+N/A;US;Petcare;Friskies;15;daffy;;
+N/A;US;Petcare;Friskies;15;dazzling;;
+2013;FR;Petcare;Frolic;20;crazy;15;
+2014;DE;Petcare;Frolic;20;crazy;15;26%
+2011;DE;Petcare;Frolic;27;cruel;15;
+2013;FR;Petcare;Frolic;20;little;10;
+2013;DE;Petcare;Frolic;15;momentous;10;
+N/A;US;Chocolate;Goodness Knows;15;fresh;;
+N/A;US;Petcare;Greenies;15;fragile;;
+2015;US;Chocolate;Hershey's;15;grieving;;
+2017;US;Chocolate;Hershey's Chocolate ;15;annoying;;
+N/A;US;Chocolate;Hershey's Kisses;15;absurd;;
+2015;US;Petcare;Iams;15;concerned;15;
+;US;Petcare;Iams;15;lopsided;;
+N/A;US;Wrigley;Ice Breaker;15;encouraging;;
+2015;US;Wrigley;Juicy Fruit;15;abandoned;15;35%
+2015;US;Wrigley;Juicy Fruit;15;mysterious;15;36%
+2017;RU;Wrigley;Juicy Fruit;15;mysterious;5;
+2014;FR;Petcare;Jumbone;10;goofy;;
+2014;DE;Petcare;Jumbone;15;goofy;15;
+2013;UK;Petcare;Jumbone;10;goofy;20;
+2013;UK;Petcare;Jumbone;15;goofy;20;
+2014;FR;Petcare;Jumbone;17;goofy;;
+2014;AU;Food;Kan Tong;30;judicious;5;27%
+2015;AU;Food;Kan Tong;15;knowledgeable;10;
+2015;RU;Petcare;Kitekat;30;bad;5;27%
+2015;RU;Petcare;Kitekat;20;bad;10;
+2014;RU;Petcare;Kitekat;30;clear;5;29%
+2012;DE;Petcare;Kitekat;20;discreet;10;26%
+2014;RU;Petcare;Kitekat;20;grubby;10;
+2015;RU;Petcare;Kitekat;20;gruesome;10;
+N/A;DE;Food;Knorr;30;anxious;;
+2014;RU;Chocolate;Korkunov;20;intelligent;15;
+;RU;Chocolate;Korkunov;30;intelligent;;
+2014;RU;Chocolate;Korkunov;20;jaded;15;
+2014;RU;Chocolate;Korkunov;30;jaded;15;
+2015;US;Chocolate;M&M's;15;abnormal;10;37%
+2015;US;Chocolate;M&M's;30;abnormal;;
+2017;AU;Chocolate;M&M's;15;abnormal;20;
+2016;US;Chocolate;M&M's;15;ahead;;32%
+2011;UK;Chocolate;M&M's;30;alike;5;
+2016;FR;Chocolate;M&M's;25;best;;29%
+2014;AU;Chocolate;M&M's;15;bitter;15;37%
+2014;RU;Chocolate;M&M's;30;bitter;10;34%
+2014;US;Chocolate;M&M's;15;bitter;;
+2015;UK;Chocolate;M&M's;20;black;;37%
+2016;US;Chocolate;M&M's;30;blushing;;34%
+2016;US;Chocolate;M&M's;60;bumpy;;33%
+2016;US;Chocolate;M&M's;15;burly;15;34%
+2014;DE;Chocolate;M&M's;15;busy;20;29%
+2016;CN;Chocolate;M&M's;15;busy;5;
+2012;CN;Chocolate;M&M's;15;cagey;5;
+2012;US;Chocolate;M&M's;15;calculating;5;
+2015;US;Chocolate;M&M's;15;cautious;20;
+2017;UK;Chocolate;M&M's;20;cautious;15;
+2014;AU;Chocolate;M&M's;15;changeable;20;39%
+2013;UK;Chocolate;M&M's;30;changeable;20;
+2013;RU;Chocolate;M&M's;30;changeable;;29%
+2013;US;Chocolate;M&M's;15;comfortable;10;
+2015;US;Chocolate;M&M's;15;condemned;20;39%
+2014;US;Chocolate;M&M's;15;curly;15;
+2014;RU;Chocolate;M&M's;30;curly;;29%
+2017;FR;Chocolate;M&M's;20;curly;20;
+2012;US;Chocolate;M&M's;15;disgusting;20;
+2010;UK;Chocolate;M&M's;20;disgusting;15;
+2015;DE;Chocolate;M&M's;15;disgusting;10;
+2015;UK;Chocolate;M&M's;30;early;10;36%
+2015;AU;Chocolate;M&M's;15;earthy;15;
+2014;RU;Chocolate;M&M's;30;educated;;26%
+2011;FR;Chocolate;M&M's;20;educated;20;
+2015;UK;Chocolate;M&M's;30;educated;20;
+2011;AU;Chocolate;M&M's;15;educated;15;
+2014;FR;Chocolate;M&M's;20;elite;20;33%
+2017;US;Chocolate;M&M's;30;erratic;15;
+N/A;US;Chocolate;M&M's;15;excellent;;
+N/A;US;Chocolate;M&M's;15;fabulous;;
+2017;US;Chocolate;M&M's;15;faint;10;
+2017;CN;Chocolate;M&M's;15;federal;10;
+2015;RU;Chocolate;M&M's;30;finicky;15;33%
+2015;RU;Chocolate;M&M's;20;finicky;15;33%
+;US;Chocolate;M&M's;;finicky;;
+2017;DE;Chocolate;M&M's;20;finicky;10;
+2014;FR;Chocolate;M&M's;20;fretful;20;33%
+N/A;US;Chocolate;M&M's;15;fumbling;;
+2016;DE;Chocolate;M&M's;10;gentle;;33%
+2011;DE;Chocolate;M&M's;20;happy;15;
+2013;UK;Chocolate;M&M's;30;jealous;10;
+2015;RU;Chocolate;M&M's;15;lean;10;
+;US;Chocolate;M&M's;30;legal;;
+2016;AU;Chocolate;M&M's;15;level;5;38%
+;US;Chocolate;M&M's;30;level;;
+2012;UK;Chocolate;M&M's;30;lewd;15;
+2013;CN;Chocolate;M&M's;15;loutish;10;
+2015;US;Chocolate;M&M's;30;loving;;32%
+;US;Chocolate;M&M's;30;low;;
+2013;AU;Chocolate;M&M's;15;luxuriant;15;
+2014;CN;Chocolate;M&M's;15;many;10;
+2016;RU;Chocolate;M&M's;25;mean;;30%
+2014;AU;Chocolate;M&M's;15;melodic;20;
+2013;FR;Chocolate;M&M's;20;melodic;20;30%
+2014;RU;Chocolate;M&M's;20;melted;10;
+;US;Chocolate;M&M's;;melted;;
+2014;RU;Chocolate;M&M's;30;melted;;
+2010;UK;Chocolate;Maltesers;20;absent;;
+2012;UK;Chocolate;Maltesers;30;actually;20;
+2012;UK;Chocolate;Maltesers;30;alcoholic;10;
+2016;UK;Chocolate;Maltesers;20;alluring;;33%
+2014;UK;Chocolate;Maltesers;20;barbarous;5;
+;UK;Chocolate;Maltesers;;boorish;;
+2015;AU;Chocolate;Maltesers;15;boorish;5;
+2011;UK;Chocolate;Maltesers;30;closed;15;
+;UK;Chocolate;Maltesers;15;damp;;
+;UK;Chocolate;Maltesers;15;damp;;
+2015;AU;Chocolate;Maltesers;15;damp;20;
+;UK;Chocolate;Maltesers;20;damp;;
+NA;AU;Chocolate;Maltesers;20;damp;;
+2015;UK;Chocolate;Maltesers;20;delicious;10;30%
+;UK;Chocolate;Maltesers;20;diligent;;
+;UK;Chocolate;Maltesers;30;diligent;;
+2011;UK;Chocolate;Maltesers;20;entire;;
+2016;UK;Chocolate;Maltesers;20;extra-small;;30%
+2016;UK;Chocolate;Maltesers;20;feeble;5;38%
+2016;UK;Chocolate;Maltesers;20;flat;15;39%
+2017;UK;Chocolate;Maltesers;20;full;5;
+2009;UK;Chocolate;Maltesers;30;gainful;;
+2008;UK;Chocolate;Maltesers;30;glib;15;
+2015;AU;Chocolate;Maltesers;15;gorgeous;15;30%
+2015;AU;Chocolate;Maltesers;15;grotesque;10;
+2015;AU;Chocolate;Maltesers;15;gusty;10;
+2011;AU;Chocolate;Maltesers;30;holistic;5;
+2015;UK;Chocolate;Maltesers;30;humdrum;5;34%
+2013;UK;Chocolate;Maltesers;30;inquisitive;5;31%
+2015;AU;Chocolate;Maltesers;15;inquisitive;5;
+2012;AU;Chocolate;Maltesers;15;lazy;10;
+2014;UK;Chocolate;Mars;30;abrasive;15;
+2009;UK;Chocolate;Mars;30;abstracted;10;30%
+2016;UK;Chocolate;Mars;60;abstracted;;30%
+2015;AU;Chocolate;Mars;30;acrid;10;31%
+2015;AU;Chocolate;Mars;15;afraid;10;28%
+2016;UK;Chocolate;Mars;30;ambiguous;10;
+2007;UK;Chocolate;Mars;30;aquatic;10;
+2015;AU;Chocolate;Mars;30;belligerent;10;
+2015;AU;Chocolate;Mars;15;belligerent;10;34%
+2011;UK;Chocolate;Mars;30;boundless;10;
+2013;UK;Chocolate;Mars;20;defeated;15;
+2012;UK;Chocolate;Mars;30;defeated;20;
+2013;UK;Chocolate;Mars;40;defeated;;
+2010;FR;Chocolate;Mars;25;gabby;15;
+2015;UK;Chocolate;Mars;30;hulking;10;
+2016;UK;Chocolate;Mars;30;informal;;30%
+2016;UK;Chocolate;Mars;60;informal;;30%
+2013;AU;Chocolate;Mars;15;lovely;10;
+2015;UK;Chocolate;Mars;30;magenta;;34%
+2015;AU;Chocolate;Mars Bar;45;acrid;10;34%
+2015;AU;Chocolate;Mars Bar;15;acrid;10;36%
+2015;AU;Chocolate;Mars Bar;45;belligerent;10;29%
+2011;AU;Chocolate;Mars Bar;15;boiling;5;
+2014;DE;Chocolate;Mars Classic;20;hateful;15;
+2014;AU;Food;Masterfoods;30;callous;15;
+2014;AU;Food;Masterfoods;30;cheap;10;
+2017;AU;Food;Masterfoods;30;high;10;
+N/A;US;Wrigley;Mentos;15;fat;;
+N/A;DE;Chocolate;Merci;25;icy;;
+2010;US;Chocolate;Milky Way;15;blue;;
+2015;US;Chocolate;Milky Way;15;chief;;36%
+2013;RU;Chocolate;Milky Way;30;cynical;10;
+2015;US;Chocolate;Milky Way;15;enchanting;;37%
+2015;US;Chocolate;Milky Way;15;foregoing;;35%
+2009;UK;Chocolate;Milky Way;30;hideous;15;
+2015;US;Chocolate;Milky Way;15;imported;15;38%
+2015;US;Chocolate;Milky Way;15;keen;10;39%
+2013;DE;Food;Miracoli;20;distinct;10;
+2015;DE;Food;Miracoli;20;lowly;10;
+2015;DE;Food;Miracoli;30;lowly;;
+2016;DE;Chocolate;Multi-brand;13;eastern;;36%
+2013;AU;Petcare;My Dog;30;endurable;15;23%
+2013;AU;Petcare;My Dog;15;frequent;15;
+2012;AU;Petcare;My Dog;15;halting;10;
+2017;AU;Petcare;My Dog;15;hissing;10;
+N/A;AU;Petcare;Nature's Table;15;aspiring;;
+;US;Petcare;Nutro;30;beneficial;;
+;US;Petcare;Nutro;30;loud;;
+2014;AU;Petcare;Optimum Dog;30;brave;10;
+2014;AU;Petcare;Optimum Dog;15;breezy;5;
+2014;AU;Petcare;Optimum Dog;15;deafening;20;26%
+2015;UK;Wrigley;Oral Care-Extra;20;delightful;10;35%
+2015;FR;Wrigley;Oral Care-Freedent;15;delicate;15;31%
+2015;US;Wrigley;Oral Care-Orbit;15;delightful;;33%
+2015;US;Wrigley;Oral Care-Orbit;30;divergent;;
+2015;US;Wrigley;Oral Care-Orbit;30;elderly;5;
+2015;US;Wrigley;Orbit;15;beautiful;5;
+2015;US;Wrigley;Orbit;30;beautiful;;
+2014;US;Wrigley;Orbit;15;blue-eyed;5;30%
+2014;US;Wrigley;Orbit;30;blue-eyed;5;
+2012;US;Wrigley;Orbit;30;brief;5;
+2012;US;Wrigley;Orbit;30;disturbed;5;
+2017;US;Wrigley;Orbit;15;fixed;;
+N/A;US;Wrigley;Orbit;15;graceful;;
+2013;US;Wrigley;Orbit;15;honorable;5;31%
+2016;US;Wrigley;Orbit;15;large;10;27%
+2016;US;Wrigley;Orbit;15;light;;27%
+2016;US;Wrigley;Orbit;15;logical;;26%
+2017;US;Wrigley;Orbit;15;lucky;5;
+2016;US;Wrigley;Orbit;15;lush;;27%
+N/A;US;Wrigley;Orbit White;12;fearless;;
+2014;UK;Petcare;Pedigree;30;abusive;10;
+2013;US;Petcare;Pedigree;15;amuck;10;
+2013;US;Petcare;Pedigree;28;amuck;;
+2016;RU;Petcare;Pedigree;30;aromatic;;25%
+2016;US;Petcare;Pedigree;30;aromatic;;35%
+2015;FR;Petcare;Pedigree;15;arrogant;;33%
+2015;UK;Petcare;Pedigree;30;chubby;5;
+;US;Petcare;Pedigree;22;cloistered;;
+2014;AU;Petcare;Pedigree;15;combative;5;
+2014;FR;Petcare;Pedigree;30;combative;10;
+2016;BR;Petcare;Pedigree;15;competitive;;27%
+2016;BR;Petcare;Pedigree;30;competitive;;27%
+2016;BR;Petcare;Pedigree;45;competitive;;28%
+2015;FR;Petcare;Pedigree;15;confident;;31%
+2015;FR;Petcare;Pedigree;20;cowardly;;31%
+2015;FR;Petcare;Pedigree;20;cumbersome;;30%
+2015;AU;Petcare;Pedigree;15;decent;5;
+2016;FR;Petcare;Pedigree;20;descriptive;10;
+2017;FR;Petcare;Pedigree;20;deserted;10;
+;US;Petcare;Pedigree;30;desperate;;
+2017;AU;Petcare;Pedigree;15;detailed;15;
+2017;DE;Petcare;Pedigree;15;detailed;15;
+2016;US;Petcare;Pedigree;15;determined;10;31%
+2015;AU;Petcare;Pedigree;30;difficult;5;28%
+2013;US;Petcare;Pedigree;15;direful;5;
+2013;US;Petcare;Pedigree;30;direful;5;
+2016;US;Petcare;Pedigree;15;disillusioned;15;31%
+;US;Petcare;Pedigree;30;dispensable;;
+2017;AU;Petcare;Pedigree;15;dispensable;15;
+2016;AU;Petcare;Pedigree;15;dusty;10;25%
+2015;DE;Petcare;Pedigree;10;eight;10;32%
+2014;AU;Petcare;Pedigree;15;empty;10;
+2014;US;Petcare;Pedigree;15;excited;10;
+2016;US;Petcare;Pedigree;15;faithful;15;32%
+N/A;US;Petcare;Pedigree;15;famous;;
+N/A;US;Petcare;Pedigree;15;far-flung;;
+N/A;UK;Petcare;Pedigree;30;faulty;;
+2011;US;Petcare;Pedigree;30;former;5;
+2016;US;Petcare;Pedigree;30;functional;;33%
+2014;AU;Petcare;Pedigree;30;glamorous;10;24%
+N/A;US;Petcare;Pedigree;15;godly;;
+2015;DE;Petcare;Pedigree;20;greasy;5;27%
+N/A;US;Petcare;Pedigree;15;guiltless;;
+2014;UK;Petcare;Pedigree;20;hanging;5;
+2015;FR;Petcare;Pedigree;15;harsh;;31%
+2016;RU;Petcare;Pedigree;25;impossible;10;
+;RU;Petcare;Pedigree;25;industrious;;
+;RU;Petcare;Pedigree;64;industrious;;
+2015;UK;Petcare;Pedigree;20;juvenile;15;27%
+;US;Petcare;Pedigree;30;learned;;
+2012;DE;Petcare;Pedigree;20;lumpy;15;
+2016;UK;Petcare;Pedigree;20;lumpy;15;
+2015;DE;Petcare;Pedigree;20;mad;;25%
+2015;DE;Petcare;Pedigree;20;magical;15;
+2012;DE;Petcare;Pedigree;20;maniacal;;
+2012;UK;Petcare;Pedigree;30;maniacal;;
+;AU;Petcare;Pedigree;15;marvelous;;
+;AU;Petcare;Pedigree;15;meek;;
+2015;DE;Petcare;Pedigree;20;murky;;26%
+2015;RU;Petcare;Perfect Fit;20;annoyed;;31%
+2015;RU;Petcare;Perfect Fit;20;economic;;30%
+2017;RU;Petcare;Perfect Fit;20;measly;10;
+N/A;US;Petcare;Purina Beyond;15;dysfunctional;;
+2013;AU;Petcare;Schmackos;15;actual;10;
+2017;AU;Petcare;Schmackos;15;critical;10;
+2014;AU;Petcare;Schmackos;15;extra-large;10;
+2013;AU;Petcare;Schmackos;15;festive;10;
+2015;AU;Petcare;Schmakos Everlasterz;15;dramatic;;37%
+2013;FR;Petcare;Sheba;20;abiding;10;
+2010;AU;Petcare;Sheba;30;erect;15;
+N/A;UK;Petcare;Sheba;40;fantastic;;
+;UK;Petcare;Sheba;30;gray;;
+2017;DE;Petcare;Sheba;30;gray;10;
+2010;UK;Petcare;Sheba;30;handy;10;
+2017;US;Petcare;Sheba;15;heady;15;
+2016;DE;Petcare;Sheba;20;healthy;10;
+2016;UK;Petcare;Sheba;30;healthy;15;
+2016;DE;Petcare;Sheba;30;healthy;;
+2013;FR;Petcare;Sheba;20;helpful;5;
+2014;DE;Petcare;Sheba;20;helpful;5;
+2014;RU;Petcare;Sheba;20;helpful;5;
+2014;UK;Petcare;Sheba;30;helpful;5;
+2013;FR;Petcare;Sheba;30;helpful;5;
+2013;US;Petcare;Sheba;30;helpful;15;
+2015;DE;Petcare;Sheba;20;highfalutin;10;27%
+2015;FR;Petcare;Sheba;20;highfalutin;10;30%
+2015;UK;Petcare;Sheba;20;highfalutin;10;28%
+2017;RU;Petcare;Sheba;30;hot;15;
+2017;RU;Petcare;Sheba;20;hot;;
+2016;US;Petcare;Sheba;15;huge;15;
+2015;US;Petcare;Sheba;20;illegal;;30%
+2015;RU;Petcare;Sheba;30;imaginary;10;27%
+2014;DE;Petcare;Sheba;20;itchy;10;
+2014;RU;Petcare;Sheba;30;itchy;10;27%
+2014;UK;Petcare;Sheba;30;itchy;5;
+2009;DE;Petcare;Sheba;20;lackadaisical;10;
+2014;US;Petcare;Sheba;15;maddening;10;31%
+2014;US;Petcare;Sheba;30;maddening;10;
+2013;US;Wrigley;Skittles;15;abundant;20;38%
+2015;RU;Wrigley;Skittles;30;abundant;;32%
+2015;RU;Wrigley;Skittles;15;abundant;15;37%
+2015;US;Wrigley;Skittles;30;abundant;20;38%
+2015;UK;Wrigley;Skittles;15;abundant;;40%
+2015;UK;Wrigley;Skittles;30;abundant;;40%
+2016;CN;Wrigley;Skittles;15;abundant;15;
+2015;UK;Wrigley;Skittles;20;abundant;10;
+2014;CN;Wrigley;Skittles;15;berserk;10;
+2014;US;Wrigley;Skittles;15;capricious;15;38%
+2015;RU;Wrigley;Skittles;30;capricious;;33%
+2015;US;Wrigley;Skittles;30;capricious;;34%
+2015;UK;Wrigley;Skittles;15;capricious;;35%
+2015;RU;Wrigley;Skittles;15;capricious;;37%
+2015;UK;Wrigley;Skittles;30;capricious;;41%
+2014;DE;Wrigley;Skittles;20;drunk;20;34%
+2014;RU;Wrigley;Skittles;15;drunk;15;33%
+2013;CN;Wrigley;Skittles;15;drunk;20;
+2015;RU;Wrigley;Skittles;30;earsplitting;;37%
+2015;UK;Wrigley;Skittles;15;earsplitting;;40%
+2015;US;Wrigley;Skittles;15;earsplitting;;40%
+2015;RU;Wrigley;Skittles;15;earsplitting;;41%
+2015;US;Wrigley;Skittles;30;earsplitting;;41%
+2015;UK;Wrigley;Skittles;30;earsplitting;;42%
+N/A;US;Wrigley;Skittles;15;friendly;;
+2016;US;Wrigley;Skittles;30;high-pitched;10;36%
+2016;US;Wrigley;Skittles;15;high-pitched;10;
+2014;US;Wrigley;Skittles;15;inexpensive;15;38%
+2015;RU;Wrigley;Skittles;30;inexpensive;;26%
+2015;RU;Wrigley;Skittles;15;inexpensive;;27%
+2015;US;Wrigley;Skittles;30;inexpensive;15;30%
+2015;UK;Wrigley;Skittles;30;inexpensive;;34%
+2015;UK;Wrigley;Skittles;15;inexpensive;;34%
+2015;US;Wrigley;Skittles;15;innocent;10;34%
+2015;US;Wrigley;Skittles;30;innocent;;38%
+2015;RU;Wrigley;Skittles;30;innocent;;29%
+2015;UK;Wrigley;Skittles;30;innocent;;39%
+2013;US;Wrigley;Skittles;15;lavish;15;37%
+2015;RU;Wrigley;Skittles;30;lavish;;34%
+2015;US;Wrigley;Skittles;30;lavish;;37%
+2015;UK;Wrigley;Skittles;30;lavish;;42%
+2015;RU;Wrigley;Skittles;30;limping;;31%
+2015;RU;Wrigley;Skittles;15;limping;;33%
+2015;UK;Wrigley;Skittles;15;limping;;35%
+2015;UK;Wrigley;Skittles;30;limping;;37%
+2015;US;Wrigley;Skittles;15;limping;;37%
+2015;US;Wrigley;Skittles;30;limping;;38%
+2012;US;Wrigley;Skittles;15;lonely;15;
+2014;UK;Wrigley;Skittles;20;ludicrous;15;
+2014;US;Wrigley;Skittles;15;mature;5;
+2016;RU;Chocolate;Snickers;20;absorbed;;27%
+2016;RU;Chocolate;Snickers;30;absorbed;;25%
+2015;US;Chocolate;Snickers;15;brash;20;
+2015;US;Chocolate;Snickers;30;brash;20;33%
+2014;AU;Chocolate;Snickers;15;chunky;10;
+2014;AU;Chocolate;Snickers;30;chunky;10;
+2013;US;Chocolate;Snickers;15;confused;15;32%
+2013;CN;Chocolate;Snickers;15;cut;15;
+2010;RU;Chocolate;Snickers;30;deadpan;5;
+2011;RU;Chocolate;Snickers;30;didactic;5;
+2015;UK;Chocolate;Snickers;30;earthy;20;33%
+2015;RU;Chocolate;Snickers;20;earthy;20;32%
+2014;DE;Chocolate;Snickers;20;earthy;15;29%
+2014;FR;Chocolate;Snickers;20;earthy;;35%
+2016;DE;Chocolate;Snickers;15;earthy;15;26%
+2014;UK;Chocolate;Snickers;20;earthy;20;
+2015;RU;Chocolate;Snickers;30;earthy;20;
+2014;CN;Chocolate;Snickers;15;earthy;10;
+2014;FR;Chocolate;Snickers;20;educational;10;
+2014;DE;Chocolate;Snickers;20;educational;10;26%
+2012;US;Chocolate;Snickers;15;efficacious;10;
+2016;US;Chocolate;Snickers;30;embarrassed;;34%
+2016;US;Chocolate;Snickers;15;embarrassed;;36%
+2014;RU;Chocolate;Snickers;20;enchanted;10;
+2016;US;Chocolate;Snickers;30;energetic;;34%
+2016;US;Chocolate;Snickers;15;energetic;;36%
+2015;US;Chocolate;Snickers;15;evanescent;20;
+2013;CN;Chocolate;Snickers;30;even;10;
+2016;US;Chocolate;Snickers;30;exciting;;32%
+2016;US;Chocolate;Snickers;15;exciting;;32%
+2013;DE;Chocolate;Snickers;20;first;15;30%
+2013;UK;Chocolate;Snickers;20;first;20;
+2016;CN;Chocolate;Snickers;15;four;10;
+N/A;US;Chocolate;Snickers;15;frantic;;
+2016;US;Chocolate;Snickers;30;furtive;15;33%
+2016;US;Chocolate;Snickers;15;furtive;15;37%
+2017;US;Chocolate;Snickers;15;gamy;15;
+N/A;UK;Chocolate;Snickers;20;glossy;;
+2010;UK;Chocolate;Snickers;30;great;;
+2015;UK;Chocolate;Snickers;30;grey;;
+2010;UK;Chocolate;Snickers;20;guarded;15;
+2010;DE;Chocolate;Snickers;20;hapless;10;
+2014;RU;Chocolate;Snickers;30;hilarious;15;27%
+2017;US;Chocolate;Snickers;15;homely;20;
+2017;US;Chocolate;Snickers;30;homely;20;
+2014;RU;Chocolate;Snickers;20;hospitable;10;
+;RU;Chocolate;Snickers;30;hospitable;;
+2013;AU;Chocolate;Snickers;15;hurt;10;
+2012;US;Chocolate;Snickers;15;hurt;20;
+2014;RU;Chocolate;Snickers;20;immense;10;
+;US;Chocolate;Snickers;15;instinctive;;
+2013;DE;Chocolate;Snickers;15;irate;20;
+2017;CN;Chocolate;Snickers;15;modern;15;
+2013;US;Chocolate;Snickers Bites;15;basic;15;29%
+2013;US;Chocolate;Snickers PB;15;immediate;10;30%
+2016;US;Wrigley;Sour Patch;15;disgusted;;
+2012;US;Wrigley;Starburst;15;cute;20;
+2014;US;Wrigley;Starburst;15;elastic;15;
+2014;US;Wrigley;Starburst;30;elastic;;35%
+2015;UK;Wrigley;Starburst;20;elastic;15;30%
+2012;US;Wrigley;Starburst;15;fancy;15;
+2012;UK;Wrigley;Starburst;20;financial;10;
+2014;UK;Wrigley;Starburst;20;gaping;15;
+2013;US;Wrigley;Starburst;15;gaping;;34%
+2013;US;Wrigley;Starburst;15;kaput;;34%
+2014;US;Wrigley;Starburst;15;latter;10;33%
+2014;US;Wrigley;Starburst;30;latter;;33%
+2015;AU;Wrigley;Starburst;15;latter;15;
+2014;US;Wrigley;Starburst Minis;15;frightened;;33%
+2014;FR;Food;Suzi Wan;20;defective;15;
+2015;FR;Food;Suzi Wan;20;hellish;10;29%
+2017;US;Petcare;Temptations;30;elated;10;
+2012;US;Petcare;Temptations;30;enthusiastic;20;33%
+2014;US;Petcare;Temptations;47;groovy;;26%
+2014;US;Petcare;Temptations;72;groovy;;27%
+;US;Petcare;Temptations;30;incompetent;;34%
+;US;Petcare;Temptations;60;incompetent;;35%
+2016;UK;Petcare;Temptations;30;interesting;;32%
+2016;UK;Petcare;Temptations;60;interesting;;34%
+;US;Petcare;Temptations;60;lively;;30%
+;US;Petcare;Temptations;30;lively;;31%
+2013;US;Petcare;Temptations/Dreamies;15;bouncy;10;
+2013;US;Petcare;Temptations/Dreamies;30;bouncy;10;
+2013;US;Petcare;Temptations/Dreamies;30;eager;15;
+2014;US;Petcare;Temptations/Dreamies;15;enthusiastic;20;32%
+2013;DE;Petcare;Temptations/Dreamies;20;like;20;26%
+2014;UK;Petcare;Temptations/Dreamies;20;like;15;31%
+2010;FR;Chocolate;Twix;20;ablaze;20;
+2015;US;Chocolate;Twix;15;abrupt;;34%
+2016;US;Chocolate;Twix;15;apathetic;10;
+2016;US;Chocolate;Twix;15;boring;15;
+2016;US;Chocolate;Twix;30;boring;15;
+2014;RU;Chocolate;Twix;30;broad;15;
+2014;US;Chocolate;Twix;30;dependent;20;34%
+2013;US;Chocolate;Twix;15;dependent;20;
+2015;RU;Chocolate;Twix;30;deranged;20;32%
+2015;DE;Chocolate;Twix;20;deranged;15;27%
+2015;FR;Chocolate;Twix;20;deranged;20;35%
+2015;UK;Chocolate;Twix;20;deranged;15;37%
+2014;DE;Chocolate;Twix;20;emotional;15;26%
+2014;UK;Chocolate;Twix;20;emotional;20;37%
+2013;FR;Chocolate;Twix;20;emotional;20;32%
+2012;US;Chocolate;Twix;15;emotional;10;
+2010;UK;Chocolate;Twix;20;equal;15;
+2013;US;Chocolate;Twix;15;fine;10;36%
+2012;RU;Chocolate;Twix;30;fine;10;
+2011;US;Chocolate;Twix;15;flippant;10;
+N/A;US;Chocolate;Twix;15;funny;;
+2017;US;Chocolate;Twix;15;giddy;20;
+2015;US;Chocolate;Twix;15;heartbreaking;;31%
+2015;US;Chocolate;Twix;30;helpless;;31%
+2015;US;Chocolate;Twix;15;hushed;;31%
+2009;DE;Chocolate;Twix;20;jumpy;10;
+2015;RU;Chocolate;Twix;30;last;10;30%
+2016;RU;Chocolate;Twix;20;late;10;
+2017;DE;Chocolate;Twix;20;loose;10;
+2016;RU;Chocolate;Twix;20;mammoth;10;
+2014;FR;Food;Uncle Ben's;30;adventurous;5;
+2011;UK;Food;Uncle Ben's;30;average;5;
+2011;UK;Food;Uncle Ben's;20;brown;;
+2014;UK;Food;Uncle Ben's;20;cloudy;10;31%
+2011;UK;Food;Uncle Ben's;30;cloudy;15;
+2014;DE;Food;Uncle Ben's;15;creepy;15;25%
+2016;US;Food;Uncle Ben's;15;crowded;5;38%
+2016;US;Food;Uncle Ben's;30;crowded;5;36%
+2006;UK;Food;Uncle Ben's;30;disagreeable;5;
+2014;US;Food;Uncle Ben's;15;evasive;5;
+2014;US;Food;Uncle Ben's;30;evasive;5;31%
+2011;DE;Food;Uncle Ben's;15;evasive;10;
+N/A;US;Food;Uncle Ben's;11;female;;
+N/A;US;Food;Uncle Ben's;65;flaky;;
+N/A;US;Food;Uncle Ben's;20;future;;
+N/A;US;Food;Uncle Ben's;15;giant;;
+2012;FR;Food;Uncle Ben's;15;hallowed;15;30%
+2012;FR;Food;Uncle Ben's;30;hallowed;15;
+2016;US;Food;Uncle Ben's;15;hallowed;10;
+2016;US;Food;Uncle Ben's;30;hallowed;10;
+2008;DE;Food;Uncle Ben's;15;hysterical;5;
+2012;UK;Food;Uncle Ben's;10;inconclusive;10;
+2013;US;Food;Uncle Ben's;15;jittery;5;
+2014;US;Food;Uncle Ben's;30;jittery;5;31%
+2011;FR;Food;Uncle Ben's;20;jittery;15;
+2015;UK;Food;Uncle Ben's;30;jumbled;10;30%
+2016;UK;Food;Uncle Ben's;10;kindhearted;15;44%
+2016;DE;Food;Uncle Ben's;30;kindly;;31%
+2014;US;Food;Uncle Ben's;15;knowing;15;35%
+2016;UK;Food;Uncle Ben's;30;knowing;15;36%
+2016;FR;Food;Uncle Ben's;30;knowing;15;
+2014;US;Food;Uncle Ben's;30;knowing;;
+2016;DE;Food;Uncle Ben's;15;known;15;27%
+2014;UK;Petcare;Whiskas;30;abashed;10;
+2014;AU;Petcare;Whiskas;15;absorbing;10;
+2013;FR;Petcare;Whiskas;30;absorbing;15;
+2013;UK;Petcare;Whiskas;30;accessible;10;
+2015;UK;Petcare;Whiskas;20;administrative;15;36%
+2012;DE;Petcare;Whiskas;20;available;5;
+2014;RU;Petcare;Whiskas;30;bashful;5;
+2017;RU;Petcare;Whiskas;20;better;10;
+2013;DE;Petcare;Whiskas;20;bewildered;10;
+2017;FR;Petcare;Whiskas;20;calm;10;
+2017;RU;Petcare;Whiskas;15;charming;15;
+2016;RU;Petcare;Whiskas;20;clean;15;
+2009;AU;Petcare;Whiskas;15;curious;5;
+2016;RU;Petcare;Whiskas;30;curvy;15;28%
+2013;RU;Petcare;Whiskas;30;elegant;10;
+2015;RU;Petcare;Whiskas;20;elfin;;35%
+2015;FR;Petcare;Whiskas;20;every;;30%
+2012;UK;Petcare;Whiskas;20;exclusive;10;
+2015;DE;Petcare;Whiskas;20;exotic;15;23%
+N/A;UK;Petcare;Whiskas;20;fearful;;
+N/A;UK;Petcare;Whiskas;20;foamy;;
+2010;UK;Petcare;Whiskas;30;forgetful;;
+2011;AU;Petcare;Whiskas;15;global;5;
+2016;RU;Petcare;Whiskas;20;green;15;31%
+2016;RU;Petcare;Whiskas;30;green;15;31%
+2012;DE;Petcare;Whiskas;20;guilty;5;
+2013;AU;Petcare;Whiskas;15;gullible;15;
+2014;RU;Petcare;Whiskas;30;gullible;5;
+2011;UK;Petcare;Whiskas;20;gullible;10;
+2012;DE;Petcare;Whiskas;15;half;15;28%
+2012;DE;Petcare;Whiskas;20;half;15;
+2014;DE;Petcare;Whiskas;20;highfalutin;10;26%
+2014;RU;Petcare;Whiskas;30;highfalutin;10;
+2014;RU;Petcare;Whiskas;30;homeless;15;30%
+2014;AU;Petcare;Whiskas;15;impressive;5;
+2011;DE;Petcare;Whiskas;20;inner;10;
+2015;FR;Petcare;Whiskas;14;irritating;10;32%
+2009;DE;Petcare;Whiskas;20;macho;;
+2008;FR;Petcare;Whiskas;20;macho;20;
+2013;RU;Petcare;Whiskas;30;massive;;
+2016;DE;Petcare;Whiskas/Kai Kan;17;ignorant;10;27%
+N/A;US;Petcare;Whistle;15;far;;
