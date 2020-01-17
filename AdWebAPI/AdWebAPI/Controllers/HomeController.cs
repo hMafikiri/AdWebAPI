@@ -68,28 +68,6 @@ namespace AdWebAPI.Controllers
                     }
                     sr.Close(); fs.Close();
 
-                    /*var csv = new CsvReader(new StreamReader(path), System.Globalization.CultureInfo.CurrentCulture);
-                    var adsList = csv.GetRecords<AdToTest>();
-
-                    foreach (var a in adsList)
-                    {
-                        if (a.Year.Equals("N/A") || String.IsNullOrWhiteSpace(a.Year))
-                        {
-                            continue;
-                        }
-                        Ad ad = new Ad()
-                        {
-                            Year = Int32.Parse(a.Year),
-                            Market = a.Market,
-                            Segment = a.Segment,
-                            Brand = a.Brand,
-                            Copy_Duration = a.Copy_Duration,
-                            Copy_Name = a.Copy_Name,
-                            Score_1  = a.Score_1,
-                            Score_2 = a.Score_2                            
-                        };
-                        adsDisplayed.Add(ad);
-                    }*/
                 }
                 
             }
@@ -98,7 +76,7 @@ namespace AdWebAPI.Controllers
                 
                 ViewData["error"] = "Upload failed";
             }
-            return View();
+            return View(relevantAds);
         }
         
         public ActionResult About()
