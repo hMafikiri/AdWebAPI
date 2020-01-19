@@ -1,7 +1,39 @@
 ﻿@{
-    ViewBag.Title = "About";
+    ViewBag.Title = "Best ads";
 }
+@model List<AdWebAPI.Models.Ad>
 <h2>@ViewBag.Title.</h2>
 <h3>@ViewBag.Message</h3>
+@if (Model != null)
+{
 
-<p>Use this area to provide additional information.</p>
+<table class="table" style="border: 1px solid black">
+    <tr>
+        <th style="border: 1px solid black;">Year</th>
+        <th style="border: 1px solid black;">Market</th>
+        <th style="border: 1px solid black;">Segment</th>
+        <th style="border: 1px solid black;">Brand</th>
+        <th style="border: 1px solid black;">Copy_Duration</th>
+        <th style="border: 1px solid black;">Copy_Name</th>
+        <th style="border: 1px solid black;">Score 1</th>
+        <th style="border: 1px solid black;">Score 2</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var a in Model)
+        {
+        <tr>
+            <td style="border: 1px solid black;">@a.Year</td>
+            <td style="border: 1px solid black;">@a.Market</td>
+            <td style="border: 1px solid black;">@a.Segment </td>
+            <td style="border: 1px solid black;">@a.Brand </td>
+            <td style="border: 1px solid black;">@a.Copy_Duration </td>
+            <td style="border: 1px solid black;">@a.Copy_Name </td>
+            <td style="border: 1px solid black;">@a.Score_1 </td>
+            <td style="border: 1px solid black;">@a.Score_2 </td>
+        </tr>
+        }
+    }
+</table>
+   
+}

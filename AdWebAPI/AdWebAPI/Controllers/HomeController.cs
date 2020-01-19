@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using AdWebAPI.Business;
 using AdWebAPI.Models;
 using CsvHelper;
 
@@ -11,79 +12,47 @@ namespace AdWebAPI.Controllers
 {
     public class HomeController : Controller
     {
+        CSVHandler csvHandler = new CSVHandler();
+        AdHandler adHandler = new AdHandler();
+
+
         public ActionResult Index()
         {
             return View();
         }
+
         [HttpPost]
         public ActionResult Index(HttpPostedFileBase file)
         {
-            string path = null;
             List<Ad> relevantAds = new List<Ad>();
             try
             {
                 if (file.ContentLength > 0)
                 {
-                    var fileName = Path.GetFileName(file.FileName);
-                    path = AppDomain.CurrentDomain.BaseDirectory+ fileName;
-                    file.SaveAs(path);
-                    FileStream fs = new FileStream(path, FileMode.Open);
-                    StreamReader sr = new StreamReader(fs);
-                    //ignore first line concerns headers
-                    string headers = sr.ReadLine();
-                    //store each line
-                    string s = sr.ReadLine();
-                    //if not at the end of file
-                    while (s != null)
-                    {
-                        string[] ligne = s.Split(';');
-                        //pass irrelevant data
-                        while (String.IsNullOrWhiteSpace(ligne[6]) && String.IsNullOrWhiteSpace(ligne[7]))
-                        {
-                            s = sr.ReadLine();
-                            ligne = s.Split(';');
-                        }
-                        if (String.IsNullOrWhiteSpace(ligne[6]))
-                        {
-                            ligne[6] = "0";
-                        }
-                        if (String.IsNullOrWhiteSpace(ligne[7]))
-                        {
-                            ligne[7] = "0";
-                        }
-                        //create a relevant ad
-                        Ad a = new Ad()
-                        {
-                            Year = Int32.Parse(ligne[0]),
-                            Market = ligne[1],
-                            Segment = ligne[2],
-                            Brand = ligne[3],
-                            Copy_Duration = Int32.Parse(ligne[4]),
-                            Copy_Name = ligne[5],
-                            Score_1 = Int32.Parse(ligne[6]),
-                            Score_2 = Int32.Parse(ligne[7].Replace('%',' '))
-                        };
-                        relevantAds.Add(a);
-                        s = sr.ReadLine();
-                    }
-                    sr.Close(); fs.Close();
-
+                    csvHandler.storeCSV(file, relevantAds);                    
                 }
-                
             }
             catch(Exception e)
-            {
-                
+            {                
                 ViewData["error"] = "Upload failed";
+            }
+            if (relevantAds.Count > 0)
+            {
+                adHandler.storeListInDb(relevantAds);
             }
             return View(relevantAds);
         }
         
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            List<Ad> bestAds = new List<Ad>();
+            ViewBag.Message1 = "The best ad based on score 1";
+            ViewBag.Message2 = "The best ad based on score 2";
+            bestAds.Add(adHandler.maxScore1());
+            bestAds.Add(adHandler.maxScore2());
+            bestAds.Add(adHandler.maxAd());
 
-            return View();
+            return View(bestAds);
         }
 
         public ActionResult Contact()

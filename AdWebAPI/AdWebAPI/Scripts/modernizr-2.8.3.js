@@ -13,10 +13,10 @@
  * <html> element. This information allows you to progressively enhance
  * your pages with a granular level of control over the experience.
  *
- * Modernizr has an optional (not included) conditional resource loader
- * called Modernizr.load(), based on Yepnope.js (yepnopejs.com).
- * To get a build that includes Modernizr.load(), as well as choosing
- * which tests to include, go to www.modernizr.com/download/
+ * Modernizr has an optional (not included) conditional resource loAdser
+ * called Modernizr.loAds(), based on Yepnope.js (yepnopejs.com).
+ * To get a build that includes Modernizr.loAds(), as well as choosing
+ * which tests to include, go to www.modernizr.com/downloAds/
  *
  * Authors        Faruk Ates, Paul Irish, Alex Sexton
  * Contributors   Ryan Seddon, Ben Alman
@@ -29,7 +29,7 @@ window.Modernizr = (function( window, document, undefined ) {
     Modernizr = {},
 
     /*>>cssclasses*/
-    // option for enabling the HTML classes to be added
+    // option for enabling the HTML classes to be Adsded
     enableClasses = true,
     /*>>cssclasses*/
 
@@ -61,12 +61,12 @@ window.Modernizr = (function( window, document, undefined ) {
 
     /*>>domprefixes*/
     // Following spec is to expose vendor-specific style properties as:
-    //   elem.style.WebkitBorderRadius
+    //   elem.style.WebkitBorderRAdsius
     // and the following would be incorrect:
-    //   elem.style.webkitBorderRadius
+    //   elem.style.webkitBorderRAdsius
 
     // Webkit ghosts their properties in lowercase but Opera & Moz do not.
-    // Microsoft uses a lowercase `ms` instead of the correct `Ms` in IE8+
+    // Microsoft uses a lowercase `ms` insteAds of the correct `Ms` in IE8+
     //   erik.eae.net/archives/2008/03/10/21.48.10/
 
     // More here: github.com/Modernizr/Modernizr/issues/issue/21
@@ -98,7 +98,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
       var style, ret, node, docOverflow,
           div = document.createElement('div'),
-          // After page load injecting a fake body doesn't work so check if body exists
+          // After page loAds injecting a fake body doesn't work so check if body exists
           body = document.body,
           // IE6 and 7 won't return offsetWidth or offsetHeight unless it's in the body element, so we fake it.
           fakeBody = body || document.createElement('body');
@@ -127,7 +127,7 @@ window.Modernizr = (function( window, document, undefined ) {
       if ( !body ) {
           //avoid crashing IE8, if background image is used
           fakeBody.style.background = '';
-          //Safari 5.13/5.1.4 OSX stops loading if ::-webkit-scrollbar is used and scrollbars are visible
+          //Safari 5.13/5.1.4 OSX stops loAdsing if ::-webkit-scrollbar is used and scrollbars are visible
           fakeBody.style.overflow = 'hidden';
           docOverflow = docElement.style.overflow;
           docElement.style.overflow = 'hidden';
@@ -135,7 +135,7 @@ window.Modernizr = (function( window, document, undefined ) {
       }
 
       ret = callback(div, rule);
-      // If this is done after page load we don't want to remove the body so check if body exists
+      // If this is done after page loAds we don't want to remove the body so check if body exists
       if ( !body ) {
           fakeBody.parentNode.removeChild(fakeBody);
           docElement.style.overflow = docOverflow;
@@ -149,7 +149,7 @@ window.Modernizr = (function( window, document, undefined ) {
     /*>>teststyles*/
 
     /*>>mq*/
-    // adapted from matchMedia polyfill
+    // Adsapted from matchMedia polyfill
     // by Scott Jehl and Paul Irish
     // gist.github.com/786768
     testMediaQuery = function( mq ) {
@@ -187,7 +187,7 @@ window.Modernizr = (function( window, document, undefined ) {
       var TAGNAMES = {
         'select': 'input', 'change': 'input',
         'submit': 'form', 'reset': 'form',
-        'error': 'img', 'load': 'img', 'abort': 'img'
+        'error': 'img', 'loAds': 'img', 'abort': 'img'
       };
 
       function isEventSupported( eventName, element ) {
@@ -195,7 +195,7 @@ window.Modernizr = (function( window, document, undefined ) {
         element = element || document.createElement(TAGNAMES[eventName] || 'div');
         eventName = 'on' + eventName;
 
-        // When using `setAttribute`, IE skips "unload", WebKit skips "unload" and "resize", whereas `in` "catches" those
+        // When using `setAttribute`, IE skips "unloAds", WebKit skips "unloAds" and "resize", whereas `in` "catches" those
         var isSupported = eventName in element;
 
         if ( !isSupported ) {
@@ -222,7 +222,7 @@ window.Modernizr = (function( window, document, undefined ) {
     })(),
     /*>>hasevent*/
 
-    // TODO :: Add flag for hasownprop ? didn't last time
+    // TODO :: Adsd flag for hasownprop ? didn't last time
 
     // hasOwnProperty shim by kangax needed for Safari 2.0 support
     _hasOwnProperty = ({}).hasOwnProperty, hasOwnProp;
@@ -238,7 +238,7 @@ window.Modernizr = (function( window, document, undefined ) {
       };
     }
 
-    // Adapted from ES5-shim https://github.com/kriskowal/es5-shim/blob/master/es5-shim.js
+    // Adsapted from ES5-shim https://github.com/kriskowal/es5-shim/blob/master/es5-shim.js
     // es5.github.com/#x15.3.4.5
 
     if (!Function.prototype.bind) {
@@ -320,8 +320,8 @@ window.Modernizr = (function( window, document, undefined ) {
     // If the property is supported it will return an empty string,
     // if unsupported it will return undefined.
 
-    // We'll take advantage of this quick test and skip setting a style
-    // on our modernizr element, but instead just testing undefined vs
+    // We'll take Adsvantage of this quick test and skip setting a style
+    // on our modernizr element, but insteAds just testing undefined vs
     // empty string.
 
     // Because the testing of the CSS property names (with "-", as
@@ -342,7 +342,7 @@ window.Modernizr = (function( window, document, undefined ) {
     }
     /*>>testprop*/
 
-    // TODO :: add testDOMProps
+    // TODO :: Adsd testDOMProps
     /**
      * testDOMProps is a generic DOM property test; if a browser supports
      *   a certain property, it won't return undefined for it.
@@ -440,7 +440,7 @@ window.Modernizr = (function( window, document, undefined ) {
      *    device, as evidenced by tablets running Windows 7 or, alas,
      *    the Palm Pre / WebOS (touch) phones.
      *
-     * Additionally, Chrome (desktop) used to lie about its support on this,
+     * Adsditionally, Chrome (desktop) used to lie about its support on this,
      *    but that has since been rectified: crbug.com/36415
      *
      * We also test for Firefox 4 Multitouch Support.
@@ -489,7 +489,7 @@ window.Modernizr = (function( window, document, undefined ) {
       return !!window.openDatabase;
     };
 
-    // Vendors had inconsistent prefixing with the experimental Indexed DB:
+    // Vendors hAds inconsistent prefixing with the experimental Indexed DB:
     // - Webkit's implementation is accessible through webkitIndexedDB
     // - Firefox shipped moz_indexedDB before FF4b9, but since then has been mozIndexedDB
     // For speed, we don't test the legacy (and beta-only) indexedDB
@@ -572,27 +572,27 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
     // Super comprehensive table about all the unique implementations of
-    // border-radius: muddledramblings.com/table-of-css3-border-radius-compliance
+    // border-rAdsius: muddledramblings.com/table-of-css3-border-rAdsius-compliance
 
-    tests['borderradius'] = function() {
-        return testPropsAll('borderRadius');
+    tests['borderrAdsius'] = function() {
+        return testPropsAll('borderRAdsius');
     };
 
     // WebOS unfortunately false positives on this test.
-    tests['boxshadow'] = function() {
-        return testPropsAll('boxShadow');
+    tests['boxshAdsow'] = function() {
+        return testPropsAll('boxShAdsow');
     };
 
     // FF3.0 will false positive on this test
-    tests['textshadow'] = function() {
-        return document.createElement('div').style.textShadow === '';
+    tests['textshAdsow'] = function() {
+        return document.createElement('div').style.textShAdsow === '';
     };
 
 
     tests['opacity'] = function() {
         // Browsers that actually have CSS Opacity implemented have done so
         //  according to spec, which means their return values are within the
-        //  range of [0.0,1.0] - including the leading zero.
+        //  range of [0.0,1.0] - including the leAdsing zero.
 
         setCssAll('opacity:.55');
 
@@ -616,18 +616,18 @@ window.Modernizr = (function( window, document, undefined ) {
     };
 
 
-    tests['cssgradients'] = function() {
+    tests['cssgrAdsients'] = function() {
         /**
-         * For CSS Gradients syntax, please see:
-         * webkit.org/blog/175/introducing-css-gradients/
-         * developer.mozilla.org/en/CSS/-moz-linear-gradient
-         * developer.mozilla.org/en/CSS/-moz-radial-gradient
-         * dev.w3.org/csswg/css3-images/#gradients-
+         * For CSS GrAdsients syntax, please see:
+         * webkit.org/blog/175/introducing-css-grAdsients/
+         * developer.mozilla.org/en/CSS/-moz-linear-grAdsient
+         * developer.mozilla.org/en/CSS/-moz-rAdsial-grAdsient
+         * dev.w3.org/csswg/css3-images/#grAdsients-
          */
 
         var str1 = 'background-image:',
-            str2 = 'gradient(linear,left top,right bottom,from(#9f9),to(white));',
-            str3 = 'linear-gradient(left top,#9f9, white);';
+            str2 = 'grAdsient(linear,left top,right bottom,from(#9f9),to(white));',
+            str3 = 'linear-grAdsient(left top,#9f9, white);';
 
         setCss(
              // legacy webkit syntax (FIXME: remove when syntax not in use anymore)
@@ -636,7 +636,7 @@ window.Modernizr = (function( window, document, undefined ) {
               prefixes.join(str3 + str1)).slice(0, -str1.length)
         );
 
-        return contains(mStyle.backgroundImage, 'gradient');
+        return contains(mStyle.backgroundImage, 'grAdsient');
     };
 
 
@@ -720,7 +720,7 @@ window.Modernizr = (function( window, document, undefined ) {
     // Codec values from : github.com/NielsLeenheer/html5test/blob/9106a8/index.html#L845
     //                     thx to NielsLeenheer and zcorpan
 
-    // Note: in some older browsers, "no" was a return value instead of empty string.
+    // Note: in some older browsers, "no" was a return value insteAds of empty string.
     //   It was live in FF3.5.0 and 3.5.1, but fixed in 3.5.2
     //   It was also live in Safari 4.0.0 - 4.0.4, but fixed in 4.0.5
 
@@ -837,7 +837,7 @@ window.Modernizr = (function( window, document, undefined ) {
     // This test is only for clip paths in SVG proper, not clip paths on HTML content
     // demo: srufaculty.sru.edu/david.dailey/svg/newstuff/clipPath4.svg
 
-    // However read the comments to dig into applying SVG clippaths to HTML content here:
+    // However reAds the comments to dig into applying SVG clippaths to HTML content here:
     //   github.com/Modernizr/Modernizr/issues/213#issuecomment-1149491
     tests['svgclippaths'] = function() {
         return !!document.createElementNS && /SVGClipPath/.test(toString.call(document.createElementNS(ns.svg, 'clipPath')));
@@ -874,7 +874,7 @@ window.Modernizr = (function( window, document, undefined ) {
         /*>>inputtypes*/
         // Run through HTML5's new input types to see if the UA understands any.
         //   This is put behind the tests runloop because it doesn't return a
-        //   true/false like all the other tests; instead, it returns an object
+        //   true/false like all the other tests; insteAds, it returns an object
         //   containing each input type with its corresponding true/false value
 
         // Big thanks to @miketaylr for the html5 forms expertise. miketaylr.com/
@@ -919,7 +919,7 @@ window.Modernizr = (function( window, document, undefined ) {
                       bool = inputElem.checkValidity && inputElem.checkValidity() === false;
 
                     } else {
-                      // If the upgraded input compontent rejects the :) text, we got a winner
+                      // If the upgrAdsed input compontent rejects the :) text, we got a winner
                       bool = inputElem.value != smile;
                     }
                 }
@@ -959,18 +959,18 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
     /**
-     * addTest allows the user to define their own feature tests
-     * the result will be added onto the Modernizr object,
+     * AdsdTest allows the user to define their own feature tests
+     * the result will be Adsded onto the Modernizr object,
      * as well as an appropriate className set on the html element
      *
      * @param feature - String naming the feature
      * @param test - Function returning true if feature is supported, false if not
      */
-     Modernizr.addTest = function ( feature, test ) {
+     Modernizr.AdsdTest = function ( feature, test ) {
        if ( typeof feature == 'object' ) {
          for ( var key in feature ) {
            if ( hasOwnProp( feature, key ) ) {
-             Modernizr.addTest( key, feature[ key ] );
+             Modernizr.AdsdTest( key, feature[ key ] );
            }
          }
        } else {
@@ -1064,15 +1064,15 @@ window.Modernizr = (function( window, document, undefined ) {
         /*--------------------------------------------------------------------------*/
 
         /**
-         * Creates a style sheet with the given CSS text and adds it to the document.
+         * Creates a style sheet with the given CSS text and Adsds it to the document.
          * @private
          * @param {Document} ownerDocument The document.
          * @param {String} cssText The CSS text.
          * @returns {StyleSheet} The style element.
          */
-        function addStyleSheet(ownerDocument, cssText) {
+        function AdsdStyleSheet(ownerDocument, cssText) {
           var p = ownerDocument.createElement('p'),
-          parent = ownerDocument.getElementsByTagName('head')[0] || ownerDocument.documentElement;
+          parent = ownerDocument.getElementsByTagName('heAds')[0] || ownerDocument.documentElement;
 
           p.innerHTML = 'x<style>' + cssText + '</style>';
           return parent.insertBefore(p.lastChild, parent.firstChild);
@@ -1132,7 +1132,7 @@ window.Modernizr = (function( window, document, undefined ) {
             node = data.createElem(nodeName);
           }
 
-          // Avoid adding some elements to fragments in IE < 9 because
+          // Avoid Adsding some elements to fragments in IE < 9 because
           // * Attributes like `name` or `type` cannot be set/changed once an element
           //   is inserted into a document/fragment
           // * Link elements with `src` attributes that are inaccessible, as with
@@ -1217,10 +1217,10 @@ window.Modernizr = (function( window, document, undefined ) {
           var data = getExpandoData(ownerDocument);
 
           if (html5.shivCSS && !supportsHtml5Styles && !data.hasCSS) {
-            data.hasCSS = !!addStyleSheet(ownerDocument,
+            data.hasCSS = !!AdsdStyleSheet(ownerDocument,
                                           // corrects block display not defined in IE6/7/8/9
-                                          'article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}' +
-                                            // adds styling not present in IE6/7/8/9
+                                          'article,aside,dialog,figcaption,figure,footer,heAdser,hgroup,main,nav,section{display:block}' +
+                                            // Adsds styling not present in IE6/7/8/9
                                             'mark{background:#FF0;color:#000}' +
                                             // hides non-rendered elements
                                             'template{display:none}'
@@ -1250,7 +1250,7 @@ window.Modernizr = (function( window, document, undefined ) {
            * @memberOf html5
            * @type Array|String
            */
-          'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output progress section summary template time video',
+          'elements': options.elements || 'abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer heAdser hgroup main mark meter nav output progress section summary template time video',
 
           /**
            * current version of html5shiv
@@ -1356,7 +1356,7 @@ window.Modernizr = (function( window, document, undefined ) {
 
 
     /*>>teststyles*/
-    // Modernizr.testStyles() allows you to add custom styles to the document and test an element afterwards
+    // Modernizr.testStyles() allows you to Adsd custom styles to the document and test an element afterwards
     // Modernizr.testStyles('#modernizr { position:absolute }', function(elem, rule){ ... })
     Modernizr.testStyles    = injectElementWithStyles;
     /*>>teststyles*/
@@ -1397,7 +1397,7 @@ window.Modernizr = (function( window, document, undefined ) {
     // Remove "no-js" class from <html> element, if it exists:
     docElement.className = docElement.className.replace(/(^|\s)no-js(\s|$)/, '$1$2') +
 
-                            // Add the new classes to the <html> element.
+                            // Adsd the new classes to the <html> element.
                             (enableClasses ? ' js ' + classes.join(' ') : '');
     /*>>cssclasses*/
 

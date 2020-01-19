@@ -140,30 +140,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Business\AdHandler.cs" />
     <Compile Include="Business\CSVHandler.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Ad.cs">
-      <DependentUpon>Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\AdToTest.cs" />
-    <Compile Include="Models\Context.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Context.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\Context.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Context.edmx</DependentUpon>
-    </Compile>
+    <Compile Include="Models\Ad.cs" />
+    <Compile Include="Models\AdModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -175,25 +159,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Models\Context.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Context.Context.cs</LastGenOutput>
-      <DependentUpon>Context.edmx</DependentUpon>
-    </Content>
-    <Content Include="Models\Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Context.edmx</DependentUpon>
-      <LastGenOutput>Context.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Context.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Context.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Context.edmx.diagram">
-      <DependentUpon>Context.edmx</DependentUpon>
-    </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

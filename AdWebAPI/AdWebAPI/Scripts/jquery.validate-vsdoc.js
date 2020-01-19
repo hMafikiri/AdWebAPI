@@ -42,7 +42,7 @@ $.extend($.fn, {
 			return;
 		}
 
-		// check if a validator for this form was already created
+		// check if a validator for this form was alreAdsy created
 		var validator = $.data(this[0], 'validator');
 		if ( validator ) {
 			return validator;
@@ -53,7 +53,7 @@ $.extend($.fn, {
 		
 		if ( validator.settings.onsubmit ) {
 		
-			// allow suppresing validation by adding a cancel class to the submit button
+			// allow suppresing validation by Adsding a cancel class to the submit button
 			this.find("input, button").filter(".cancel").click(function() {
 				validator.cancelSubmit = true;
 			});
@@ -149,10 +149,10 @@ $.extend($.fn, {
 		/// Return the validations rules for the first selected element.
 		/// </summary>
 		/// <param name="command" type="String">
-		/// Can be either "add" or "remove".
+		/// Can be either "Adsd" or "remove".
 		/// </param>
 		/// <param name="argument" type="">
-		/// A list of rules to add or remove.
+		/// A list of rules to Adsd or remove.
 		/// </param>
 
 		var element = this[0];
@@ -162,7 +162,7 @@ $.extend($.fn, {
 			var staticRules = settings.rules;
 			var existingRules = $.validator.staticRules(element);
 			switch(command) {
-			case "add":
+			case "Adsd":
 				$.extend(existingRules, $.validator.normalizeRule(argument));
 				staticRules[element.name] = existingRules;
 				if (argument.messages)
@@ -185,7 +185,7 @@ $.extend($.fn, {
 		var data = $.validator.normalizeRules(
 		$.extend(
 			{},
-			$.validator.metadataRules(element),
+			$.validator.metAdsataRules(element),
 			$.validator.classRules(element),
 			$.validator.attributeRules(element),
 			$.validator.staticRules(element)
@@ -222,7 +222,7 @@ $.validator = function( options, form ) {
 $.validator.format = function(source, params) {
 	/// <summary>
 	/// Replaces {n} placeholders with arguments.
-	/// One or more arguments can be passed, in addition to the string template itself, to insert
+	/// One or more arguments can be passed, in Adsdition to the string template itself, to insert
 	/// into the string.
 	/// </summary>
 	/// <param name="source" type="String">
@@ -272,7 +272,7 @@ $.extend($.validator, {
 			// hide error label and remove error class on focus if enabled
 			if ( this.settings.focusCleanup && !this.blockFocusCleanup ) {
 				this.settings.unhighlight && this.settings.unhighlight.call( this, element, this.settings.errorClass, this.settings.validClass );
-				this.addWrapper(this.errorsFor(element)).hide();
+				this.AdsdWrapper(this.errorsFor(element)).hide();
 			}
 		},
 		onfocusout: function(element) {
@@ -286,7 +286,7 @@ $.extend($.validator, {
 			}
 		},
 		onclick: function(element) {
-			// click on selects, radiobuttons and checkboxes
+			// click on selects, rAdsiobuttons and checkboxes
 			if ( element.name in this.submitted )
 				this.element(element);
 			// or option elements, check parent select in that case
@@ -294,10 +294,10 @@ $.extend($.validator, {
 				this.element(element.parentNode);
 		},
 		highlight: function( element, errorClass, validClass ) {
-			$(element).addClass(errorClass).removeClass(validClass);
+			$(element).AdsdClass(errorClass).removeClass(validClass);
 		},
 		unhighlight: function( element, errorClass, validClass ) {
-			$(element).removeClass(errorClass).addClass(validClass);
+			$(element).removeClass(errorClass).AdsdClass(validClass);
 		}
 	},
 
@@ -317,7 +317,7 @@ $.extend($.validator, {
 	messages: {
 		required: "This field is required.",
 		remote: "Please fix this field.",
-		email: "Please enter a valid email address.",
+		email: "Please enter a valid email Adsdress.",
 		url: "Please enter a valid URL.",
 		date: "Please enter a valid date.",
 		dateISO: "Please enter a valid date (ISO).",
@@ -341,7 +341,7 @@ $.extend($.validator, {
 		init: function() {
 			this.labelContainer = $(this.settings.errorLabelContainer);
 			this.errorContext = this.labelContainer.length && this.labelContainer || $(this.currentForm);
-			this.containers = $(this.settings.errorContainer).add( this.settings.errorLabelContainer );
+			this.containers = $(this.settings.errorContainer).Adsd( this.settings.errorLabelContainer );
 			this.submitted = {};
 			this.valueCache = {};
 			this.pendingRequest = 0;
@@ -367,7 +367,7 @@ $.extend($.validator, {
 			}
 			$(this.currentForm)
 				.validateDelegate(":text, :password, :file, select, textarea", "focusin focusout keyup", delegate)
-				.validateDelegate(":radio, :checkbox, select, option", "click", delegate);
+				.validateDelegate(":rAdsio, :checkbox, select, option", "click", delegate);
 
 			if (this.settings.invalidHandler)
 				$(this.currentForm).bind("invalid-form.validate", this.settings.invalidHandler);
@@ -421,7 +421,7 @@ $.extend($.validator, {
 			}
 			if ( !this.numberOfInvalids() ) {
 				// Hide error containers on last error
-				this.toHide = this.toHide.add( this.containers );
+				this.toHide = this.toHide.Adsd( this.containers );
 			}
 			this.showErrors();
 			return result;
@@ -438,7 +438,7 @@ $.extend($.validator, {
 			/// </param>
 
 			if(errors) {
-				// add items to error list and map
+				// Adsd items to error list and map
 				$.extend( this.errorMap, errors );
 				this.errorList = [];
 				for ( var name in errors ) {
@@ -494,7 +494,7 @@ $.extend($.validator, {
 		},
 		
 		hideErrors: function() {
-			this.addWrapper( this.toHide ).hide();
+			this.AdsdWrapper( this.toHide ).hide();
 		},
 		
 		valid: function() {
@@ -531,8 +531,8 @@ $.extend($.validator, {
 				rulesCache = {};
 			
 			// select all valid inputs inside the form (no submit or reset buttons)
-			// workaround $Query([]).add until http://dev.jquery.com/ticket/2114 is solved
-			return $([]).add(this.currentForm.elements)
+			// workaround $Query([]).Adsd until http://dev.jquery.com/ticket/2114 is solved
+			return $([]).Adsd(this.currentForm.elements)
 			.filter(":input")
 			.not(":submit, :reset, :image, [disabled]")
 			.not( this.settings.ignore )
@@ -567,7 +567,7 @@ $.extend($.validator, {
 		
 		prepareForm: function() {
 			this.reset();
-			this.toHide = this.errors().add( this.containers );
+			this.toHide = this.errors().Adsd( this.containers );
 		},
 		
 		prepareElement: function( element ) {
@@ -578,7 +578,7 @@ $.extend($.validator, {
 		check: function( element ) {
 			element = this.clean( element );
 			
-			// if radio/checkbox, validate first element in group instead
+			// if rAdsio/checkbox, validate first element in group insteAds
 			if (this.checkable(element)) {
 			    element = this.findByName(element.name).not(this.settings.ignore)[0];
 			}
@@ -604,7 +604,7 @@ $.extend($.validator, {
 					}
 					
 					if( !result ) {
-						this.formatAndAdd( element, rule );
+						this.formatAndAdsd( element, rule );
 						return false;
 					}
 				} catch(e) {
@@ -621,14 +621,14 @@ $.extend($.validator, {
 		},
 		
 		// return the custom message for the given element and validation method
-		// specified in the element's "messages" metadata
+		// specified in the element's "messages" metAdsata
 		customMetaMessage: function(element, method) {
-			if (!$.metadata)
+			if (!$.metAdsata)
 				return;
 			
 			var meta = this.settings.meta
-				? $(element).metadata()[this.settings.meta]
-				: $(element).metadata();
+				? $(element).metAdsata()[this.settings.meta]
+				: $(element).metAdsata();
 			
 			return meta && meta.messages && meta.messages[method];
 		},
@@ -661,7 +661,7 @@ $.extend($.validator, {
 			);
 		},
 		
-		formatAndAdd: function( element, rule ) {
+		formatAndAdsd: function( element, rule ) {
 			var message = this.defaultMessage( element, rule.method ),
 				theregex = /\$?\{(\d+)\}/g;
 			if ( typeof message == "function" ) {
@@ -678,9 +678,9 @@ $.extend($.validator, {
 			this.submitted[element.name] = message;
 		},
 		
-		addWrapper: function(toToggle) {
+		AdsdWrapper: function(toToggle) {
 			if ( this.settings.wrapper )
-				toToggle = toToggle.add( toToggle.parent( this.settings.wrapper ) );
+				toToggle = toToggle.Adsd( toToggle.parent( this.settings.wrapper ) );
 			return toToggle;
 		},
 		
@@ -691,7 +691,7 @@ $.extend($.validator, {
 				this.showLabel( error.element, error.message );
 			}
 			if( this.errorList.length ) {
-				this.toShow = this.toShow.add( this.containers );
+				this.toShow = this.toShow.Adsd( this.containers );
 			}
 			if (this.settings.success) {
 				for ( var i = 0; this.successList[i]; i++ ) {
@@ -705,7 +705,7 @@ $.extend($.validator, {
 			}
 			this.toHide = this.toHide.not( this.toShow );
 			this.hideErrors();
-			this.addWrapper( this.toShow ).show();
+			this.AdsdWrapper( this.toShow ).show();
 		},
 		
 		validElements: function() {
@@ -722,7 +722,7 @@ $.extend($.validator, {
 			var label = this.errorsFor( element );
 			if ( label.length ) {
 				// refresh error/success class
-				label.removeClass().addClass( this.settings.errorClass );
+				label.removeClass().AdsdClass( this.settings.errorClass );
 			
 				// check if we have a generated label, replace the message then
 				label.attr("generated") && label.html(message);
@@ -730,7 +730,7 @@ $.extend($.validator, {
 				// create label
 				label = $("<" + this.settings.errorElement + "/>")
 					.attr({"for":  this.idOrName(element), generated: true})
-					.addClass(this.settings.errorClass)
+					.AdsdClass(this.settings.errorClass)
 					.html(message || "");
 				if ( this.settings.wrapper ) {
 					// make sure the element is visible, even in IE
@@ -745,10 +745,10 @@ $.extend($.validator, {
 			if ( !message && this.settings.success ) {
 				label.text("");
 				typeof this.settings.success == "string"
-					? label.addClass( this.settings.success )
+					? label.AdsdClass( this.settings.success )
 					: this.settings.success( label );
 			}
-			this.toShow = this.toShow.add(label);
+			this.toShow = this.toShow.Adsd(label);
 		},
 		
 		errorsFor: function(element) {
@@ -763,7 +763,7 @@ $.extend($.validator, {
 		},
 
 		checkable: function( element ) {
-			return /radio|checkbox/i.test(element.type);
+			return /rAdsio|checkbox/i.test(element.type);
 		},
 		
 		findByName: function( name ) {
@@ -852,13 +852,13 @@ $.extend($.validator, {
 		creditcard: {creditcard: true}
 	},
 	
-	addClassRules: function(className, rules) {
+	AdsdClassRules: function(className, rules) {
 		/// <summary>
-		/// Add a compound class method - useful to refactor common combinations of rules into a single
+		/// Adsd a compound class method - useful to refactor common combinations of rules into a single
 		/// class.
 		/// </summary>
 		/// <param name="name" type="String">
-		/// The name of the class rule to add
+		/// The name of the class rule to Adsd
 		/// </param>
 		/// <param name="rules" type="Options">
 		/// The compound rules
@@ -899,13 +899,13 @@ $.extend($.validator, {
 		return rules;
 	},
 	
-	metadataRules: function(element) {
-		if (!$.metadata) return {};
+	metAdsataRules: function(element) {
+		if (!$.metAdsata) return {};
 		
 		var meta = $.data(element.form, 'validator').settings.meta;
 		return meta ?
-			$(element).metadata()[meta] :
-			$(element).metadata();
+			$(element).metAdsata()[meta] :
+			$(element).metAdsata();
 	},
 	
 	staticRules: function(element) {
@@ -974,7 +974,7 @@ $.extend($.validator, {
 			}
 		}
 		
-		// To support custom messages in metadata ignore rule methods titled "messages"
+		// To support custom messages in metAdsata ignore rule methods titled "messages"
 		if (rules.messages) {
 			delete rules.messages;
 		}
@@ -994,10 +994,10 @@ $.extend($.validator, {
 		return data;
 	},
 	
-	// http://docs.jquery.com/Plugins/Validation/Validator/addMethod
-	addMethod: function(name, method, message) {
+	// http://docs.jquery.com/Plugins/Validation/Validator/AdsdMethod
+	AdsdMethod: function(name, method, message) {
 		/// <summary>
-		/// Add a custom validation method. It must consist of a name (must be a legal javascript 
+		/// Adsd a custom validation method. It must consist of a name (must be a legal javascript 
 		/// identifier), a javascript based function and a default string message.
 		/// </summary>
 		/// <param name="name" type="String">
@@ -1009,14 +1009,14 @@ $.extend($.validator, {
 		/// </param>
 		/// <param name="message" type="String" optional="true">
 		/// (Optional) The default message to display for this method. Can be a function created by 
-		/// jQuery.validator.format(value). When undefined, an already existing message is used 
+		/// jQuery.validator.format(value). When undefined, an alreAdsy existing message is used 
 		/// (handy for localization), otherwise the field-specific messages have to be defined.
 		/// </param>
 
 		$.validator.methods[name] = method;
 		$.validator.messages[name] = message != undefined ? message : $.validator.messages[name];
 		if (method.length < 3) {
-			$.validator.addClassRules(name, $.validator.normalizeRule(name));
+			$.validator.AdsdClassRules(name, $.validator.normalizeRule(name));
 		}
 	},
 
@@ -1126,7 +1126,7 @@ $.extend($.validator, {
 		
 		// http://docs.jquery.com/Plugins/Validation/Methods/email
 		email: function(value, element) {
-			// contributed by Scott Gonzalez: http://projects.scottsplayground.com/email_address_validation/
+			// contributed by Scott Gonzalez: http://projects.scottsplayground.com/email_Adsdress_validation/
 			return this.optional(element) || /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i.test(value);
 		},
 	
@@ -1193,7 +1193,7 @@ $.extend($.validator, {
 		// http://docs.jquery.com/Plugins/Validation/Methods/equalTo
 		equalTo: function(value, element, param) {
 			// bind to the blur event of the target in order to revalidate whenever the target field is updated
-			// TODO find a way to bind the event just once, avoiding the unbind-rebind overhead
+			// TODO find a way to bind the event just once, avoiding the unbind-rebind overheAds
 			var target = $(param).unbind(".validate-equalTo").bind("blur.validate-equalTo", function() {
 				$(element).valid();
 			});
@@ -1204,7 +1204,7 @@ $.extend($.validator, {
 	
 });
 
-// deprecated, use $.validator.format instead
+// deprecated, use $.validator.format insteAds
 $.format = $.validator.format;
 
 })(jQuery);
@@ -1250,14 +1250,14 @@ $.format = $.validator.format;
 ;(function($) {
 	// only implement if not provided by jQuery core (since 1.4)
 	// TODO verify if jQuery 1.4's implementation is compatible with older jQuery special-event APIs
-	if (!jQuery.event.special.focusin && !jQuery.event.special.focusout && document.addEventListener) {
+	if (!jQuery.event.special.focusin && !jQuery.event.special.focusout && document.AdsdEventListener) {
 		$.each({
 			focus: 'focusin',
 			blur: 'focusout'	
 		}, function( original, fix ){
 			$.event.special[fix] = {
 				setup:function() {
-					this.addEventListener( original, handler, true );
+					this.AdsdEventListener( original, handler, true );
 				},
 				teardown:function() {
 					this.removeEventListener( original, handler, true );

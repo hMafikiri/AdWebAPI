@@ -29,13 +29,13 @@ $.extend( $.fn, {
 			return;
 		}
 
-		// Check if a validator for this form was already created
+		// Check if a validator for this form was alreAdsy created
 		var validator = $.data( this[ 0 ], "validator" );
 		if ( validator ) {
 			return validator;
 		}
 
-		// Add novalidate tag if HTML5.
+		// Adsd novalidate tag if HTML5.
 		this.attr( "novalidate", "novalidate" );
 
 		validator = new $.validator( options, this[ 0 ] );
@@ -49,12 +49,12 @@ $.extend( $.fn, {
 				// submits later.
 				validator.submitButton = event.currentTarget;
 
-				// Allow suppressing validation by adding a cancel class to the submit button
+				// Allow suppressing validation by Adsding a cancel class to the submit button
 				if ( $( this ).hasClass( "cancel" ) ) {
 					validator.cancelSubmit = true;
 				}
 
-				// Allow suppressing validation by adding the html5 formnovalidate attribute to the submit button
+				// Allow suppressing validation by Adsding the html5 formnovalidate attribute to the submit button
 				if ( $( this ).attr( "formnovalidate" ) !== undefined ) {
 					validator.cancelSubmit = true;
 				}
@@ -163,7 +163,7 @@ $.extend( $.fn, {
 			staticRules = settings.rules;
 			existingRules = $.validator.staticRules( element );
 			switch ( command ) {
-			case "add":
+			case "Adsd":
 				$.extend( existingRules, $.validator.normalizeRule( argument ) );
 
 				// Remove messages from rules, but allow them to be set separately
@@ -329,7 +329,7 @@ $.extend( $.validator, {
 		},
 		onclick: function( element ) {
 
-			// Click on selects, radiobuttons and checkboxes
+			// Click on selects, rAdsiobuttons and checkboxes
 			if ( element.name in this.submitted ) {
 				this.element( element );
 
@@ -339,17 +339,17 @@ $.extend( $.validator, {
 			}
 		},
 		highlight: function( element, errorClass, validClass ) {
-			if ( element.type === "radio" ) {
-				this.findByName( element.name ).addClass( errorClass ).removeClass( validClass );
+			if ( element.type === "rAdsio" ) {
+				this.findByName( element.name ).AdsdClass( errorClass ).removeClass( validClass );
 			} else {
-				$( element ).addClass( errorClass ).removeClass( validClass );
+				$( element ).AdsdClass( errorClass ).removeClass( validClass );
 			}
 		},
 		unhighlight: function( element, errorClass, validClass ) {
-			if ( element.type === "radio" ) {
-				this.findByName( element.name ).removeClass( errorClass ).addClass( validClass );
+			if ( element.type === "rAdsio" ) {
+				this.findByName( element.name ).removeClass( errorClass ).AdsdClass( validClass );
 			} else {
-				$( element ).removeClass( errorClass ).addClass( validClass );
+				$( element ).removeClass( errorClass ).AdsdClass( validClass );
 			}
 		}
 	},
@@ -362,7 +362,7 @@ $.extend( $.validator, {
 	messages: {
 		required: "This field is required.",
 		remote: "Please fix this field.",
-		email: "Please enter a valid email address.",
+		email: "Please enter a valid email Adsdress.",
 		url: "Please enter a valid URL.",
 		date: "Please enter a valid date.",
 		dateISO: "Please enter a valid date (ISO).",
@@ -385,7 +385,7 @@ $.extend( $.validator, {
 		init: function() {
 			this.labelContainer = $( this.settings.errorLabelContainer );
 			this.errorContext = this.labelContainer.length && this.labelContainer || $( this.currentForm );
-			this.containers = $( this.settings.errorContainer ).add( this.settings.errorLabelContainer );
+			this.containers = $( this.settings.errorContainer ).Adsd( this.settings.errorLabelContainer );
 			this.submitted = {};
 			this.valueCache = {};
 			this.pendingRequest = 0;
@@ -429,11 +429,11 @@ $.extend( $.validator, {
 					":text, [type='password'], [type='file'], select, textarea, [type='number'], [type='search'], " +
 					"[type='tel'], [type='url'], [type='email'], [type='datetime'], [type='date'], [type='month'], " +
 					"[type='week'], [type='time'], [type='datetime-local'], [type='range'], [type='color'], " +
-					"[type='radio'], [type='checkbox'], [contenteditable], [type='button']", delegate )
+					"[type='rAdsio'], [type='checkbox'], [contenteditable], [type='button']", delegate )
 
 				// Support: Chrome, oldIE
 				// "select" is provided as event.target when clicking a option
-				.on( "click.validate", "select, option, [type='radio'], [type='checkbox']", delegate );
+				.on( "click.validate", "select, option, [type='rAdsio'], [type='checkbox']", delegate );
 
 			if ( this.settings.invalidHandler ) {
 				$( this.currentForm ).on( "invalid-form.validate", this.settings.invalidHandler );
@@ -474,7 +474,7 @@ $.extend( $.validator, {
 				this.prepareElement( checkElement );
 				this.currentElements = $( checkElement );
 
-				// If this element is grouped, then validate all group elements already
+				// If this element is grouped, then validate all group elements alreAdsy
 				// containing a value
 				group = this.groups[ checkElement.name ];
 				if ( group ) {
@@ -500,11 +500,11 @@ $.extend( $.validator, {
 				if ( !this.numberOfInvalids() ) {
 
 					// Hide error containers on last error
-					this.toHide = this.toHide.add( this.containers );
+					this.toHide = this.toHide.Adsd( this.containers );
 				}
 				this.showErrors();
 
-				// Add aria-invalid status for screen readers
+				// Adsd aria-invalid status for screen reAdsers
 				$( element ).attr( "aria-invalid", !rs );
 			}
 
@@ -516,7 +516,7 @@ $.extend( $.validator, {
 			if ( errors ) {
 				var validator = this;
 
-				// Add items to error list and map
+				// Adsd items to error list and map
 				$.extend( this.errorMap, errors );
 				this.errorList = $.map( this.errorMap, function( message, name ) {
 					return {
@@ -594,7 +594,7 @@ $.extend( $.validator, {
 
 		hideThese: function( errors ) {
 			errors.not( this.containers ).text( "" );
-			this.addWrapper( errors ).hide();
+			this.AdsdWrapper( errors ).hide();
 		},
 
 		valid: function() {
@@ -683,7 +683,7 @@ $.extend( $.validator, {
 
 		prepareForm: function() {
 			this.reset();
-			this.toHide = this.errors().add( this.containers );
+			this.toHide = this.errors().Adsd( this.containers );
 		},
 
 		prepareElement: function( element ) {
@@ -696,10 +696,10 @@ $.extend( $.validator, {
 				type = element.type,
 				val, idx;
 
-			if ( type === "radio" || type === "checkbox" ) {
+			if ( type === "rAdsio" || type === "checkbox" ) {
 				return this.findByName( element.name ).filter( ":checked" ).val();
 			} else if ( type === "number" && typeof element.validity !== "undefined" ) {
-				return element.validity.badInput ? "NaN" : $element.val();
+				return element.validity.bAdsInput ? "NaN" : $element.val();
 			}
 
 			if ( element.hasAttribute( "contenteditable" ) ) {
@@ -757,7 +757,7 @@ $.extend( $.validator, {
 				normalizer = this.settings.normalizer;
 			}
 
-			// If normalizer is defined, then call it to retreive the changed value instead
+			// If normalizer is defined, then call it to retreive the changed value insteAds
 			// of using the real one.
 			// Note that `this` in the normalizer is `element`.
 			if ( normalizer ) {
@@ -790,7 +790,7 @@ $.extend( $.validator, {
 					}
 
 					if ( !result ) {
-						this.formatAndAdd( element, rule );
+						this.formatAndAdsd( element, rule );
 						return false;
 					}
 				} catch ( e ) {
@@ -870,7 +870,7 @@ $.extend( $.validator, {
 			return message;
 		},
 
-		formatAndAdd: function( element, rule ) {
+		formatAndAdsd: function( element, rule ) {
 			var message = this.defaultMessage( element, rule );
 
 			this.errorList.push( {
@@ -883,9 +883,9 @@ $.extend( $.validator, {
 			this.submitted[ element.name ] = message;
 		},
 
-		addWrapper: function( toToggle ) {
+		AdsdWrapper: function( toToggle ) {
 			if ( this.settings.wrapper ) {
-				toToggle = toToggle.add( toToggle.parent( this.settings.wrapper ) );
+				toToggle = toToggle.Adsd( toToggle.parent( this.settings.wrapper ) );
 			}
 			return toToggle;
 		},
@@ -900,7 +900,7 @@ $.extend( $.validator, {
 				this.showLabel( error.element, error.message );
 			}
 			if ( this.errorList.length ) {
-				this.toShow = this.toShow.add( this.containers );
+				this.toShow = this.toShow.Adsd( this.containers );
 			}
 			if ( this.settings.success ) {
 				for ( i = 0; this.successList[ i ]; i++ ) {
@@ -914,7 +914,7 @@ $.extend( $.validator, {
 			}
 			this.toHide = this.toHide.not( this.toShow );
 			this.hideErrors();
-			this.addWrapper( this.toShow ).show();
+			this.AdsdWrapper( this.toShow ).show();
 		},
 
 		validElements: function() {
@@ -936,7 +936,7 @@ $.extend( $.validator, {
 			if ( error.length ) {
 
 				// Refresh error/success class
-				error.removeClass( this.settings.validClass ).addClass( this.settings.errorClass );
+				error.removeClass( this.settings.validClass ).AdsdClass( this.settings.errorClass );
 
 				// Replace message on existing label
 				error.html( message );
@@ -945,7 +945,7 @@ $.extend( $.validator, {
 				// Create error element
 				error = $( "<" + this.settings.errorElement + ">" )
 					.attr( "id", elementID + "-error" )
-					.addClass( this.settings.errorClass )
+					.AdsdClass( this.settings.errorClass )
 					.html( message || "" );
 
 				// Maintain reference to the element to be placed into the DOM
@@ -980,7 +980,7 @@ $.extend( $.validator, {
 						describedBy = errorID;
 					} else if ( !describedBy.match( new RegExp( "\\b" + this.escapeCssMeta( errorID ) + "\\b" ) ) ) {
 
-						// Add to end of list if not already present
+						// Adsd to end of list if not alreAdsy present
 						describedBy += " " + errorID;
 					}
 					$( element ).attr( "aria-describedby", describedBy );
@@ -1001,12 +1001,12 @@ $.extend( $.validator, {
 			if ( !message && this.settings.success ) {
 				error.text( "" );
 				if ( typeof this.settings.success === "string" ) {
-					error.addClass( this.settings.success );
+					error.AdsdClass( this.settings.success );
 				} else {
 					this.settings.success( error, element );
 				}
 			}
-			this.toShow = this.toShow.add( error );
+			this.toShow = this.toShow.Adsd( error );
 		},
 
 		errorsFor: function( element ) {
@@ -1038,7 +1038,7 @@ $.extend( $.validator, {
 
 		validationTargetFor: function( element ) {
 
-			// If radio/checkbox, validate first element in group instead
+			// If rAdsio/checkbox, validate first element in group insteAds
 			if ( this.checkable( element ) ) {
 				element = this.findByName( element.name );
 			}
@@ -1048,7 +1048,7 @@ $.extend( $.validator, {
 		},
 
 		checkable: function( element ) {
-			return ( /radio|checkbox/i ).test( element.type );
+			return ( /rAdsio|checkbox/i ).test( element.type );
 		},
 
 		findByName: function( name ) {
@@ -1091,7 +1091,7 @@ $.extend( $.validator, {
 		startRequest: function( element ) {
 			if ( !this.pending[ element.name ] ) {
 				this.pendingRequest++;
-				$( element ).addClass( this.settings.pendingClass );
+				$( element ).AdsdClass( this.settings.pendingClass );
 				this.pending[ element.name ] = true;
 			}
 		},
@@ -1109,7 +1109,7 @@ $.extend( $.validator, {
 				$( this.currentForm ).submit();
 
 				// Remove the hidden input that was used as a replacement for the
-				// missing submit button. The hidden input is added by `handle()`
+				// missing submit button. The hidden input is Adsded by `handle()`
 				// to ensure that the value of the used submit button is passed on
 				// for scripted submits triggered by this method
 				if ( this.submitButton ) {
@@ -1158,7 +1158,7 @@ $.extend( $.validator, {
 		creditcard: { creditcard: true }
 	},
 
-	addClassRules: function( className, rules ) {
+	AdsdClassRules: function( className, rules ) {
 		if ( className.constructor === String ) {
 			this.classRuleSettings[ className ] = rules;
 		} else {
@@ -1343,12 +1343,12 @@ $.extend( $.validator, {
 		return data;
 	},
 
-	// https://jqueryvalidation.org/jQuery.validator.addMethod/
-	addMethod: function( name, method, message ) {
+	// https://jqueryvalidation.org/jQuery.validator.AdsdMethod/
+	AdsdMethod: function( name, method, message ) {
 		$.validator.methods[ name ] = method;
 		$.validator.messages[ name ] = message !== undefined ? message : $.validator.messages[ name ];
 		if ( method.length < 3 ) {
-			$.validator.addClassRules( name, $.validator.normalizeRule( name ) );
+			$.validator.AdsdClassRules( name, $.validator.normalizeRule( name ) );
 		}
 	},
 
@@ -1377,7 +1377,7 @@ $.extend( $.validator, {
 		// https://jqueryvalidation.org/email-method/
 		email: function( value, element ) {
 
-			// From https://html.spec.whatwg.org/multipage/forms.html#valid-e-mail-address
+			// From https://html.spec.whatwg.org/multipage/forms.html#valid-e-mail-Adsdress
 			// Retrieved 2014-01-14
 			// If you have a problem with this implementation, report a bug against the above spec
 			// Or use custom methods to implement your own email validation
@@ -1491,7 +1491,7 @@ $.extend( $.validator, {
 			// Bind to the blur event of the target in order to revalidate whenever the target field is updated
 			var target = $( param );
 			if ( this.settings.onfocusout && target.not( ".validate-equalTo-blur" ).length ) {
-				target.addClass( "validate-equalTo-blur" ).on( "blur.validate-equalTo", function() {
+				target.AdsdClass( "validate-equalTo-blur" ).on( "blur.validate-equalTo", function() {
 					$( element ).valid();
 				} );
 			}
