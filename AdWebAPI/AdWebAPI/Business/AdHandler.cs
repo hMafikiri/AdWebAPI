@@ -12,7 +12,9 @@ namespace AdWebAPI.Business
         {
             using (AdModel context = new AdModel())
             {
+                //retrieve ad with the highest scores
                 Ad adMax = context.Ads.OrderByDescending(adS1 => adS1.Score_1).ThenByDescending(adS2 => adS2.Score_2).FirstOrDefault();
+
                 if (adMax != null)
                 {
                     return adMax;
@@ -26,8 +28,9 @@ namespace AdWebAPI.Business
             {
                 //get the max score 
                 int highestScore1 = context.Ads.Max(ad => ad.Score_1);
-                //retrieve the ad with the highest score 
-                var adMax = context.Ads.Where(ad => ad.Score_1 == highestScore1).First();
+                //retrieve the ad with the highest score 1
+                // adMax = context.Ads.OrderByDescending(adS1 => adS1.Score_1).FirstOrDefault();
+                var adMax = context.Ads.Where(ad => ad.Score_1 == highestScore1).FirstOrDefault();
                 Ad maxScore1 = new Ad()
                 {
                     idAd = adMax.idAd,
@@ -50,7 +53,8 @@ namespace AdWebAPI.Business
             {
                 //get the max score 
                 int highestScore2 = context.Ads.Max(ad => ad.Score_2);
-                //retrieve the ad with the highest score 
+                //retrieve the ad with the highest score 2 
+                // adMax = context.Ads.OrderByDescending(ad => ad.Score_2).FirstOrDefault();
                 var adMax = context.Ads.Where(ad => ad.Score_2 == highestScore2).FirstOrDefault();
                 Ad maxScore2 = new Ad()
                 {
